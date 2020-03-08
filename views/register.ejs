@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!--Title of the Website-->
+  <title>Baila Bollywood</title>
+
+  <!--Meta tags for SEO-->
+  <meta name="description"
+    content="A Spanish Language Portal on Indian Dance Songs Subtitled into Spanish Language.Spanish Speakers can watch Bollywood Songs with Spanish Subtitles." />
+  <meta name="robots" content="index, follow" />
+
+  <!--Meta tag for Responsiveness-->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+  <!--Title bar Icon-->
+  <link rel="icon" href="/images/Spanish-bolo-natraj-transparent.png">
+
+  <!---------------Bootstrap Stylesheet---------------------------------------->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <!---------------------------Google Fonts----------------------------------------->
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200&display=swap" rel="stylesheet" />
+
+  <!-------------------------------------Font Awesome Icons----------------------------------------->
+  <script async defer src="/scripts/all.min.js"></script>
+  <scriptv async defer src="/scripts/fontawesome.min.js">
+  </script>
+
+
+  <!-------------------Custom css files------------------------------->
+
+  <!----------------------------Navbar Css Files---------------------->
+  <link rel="stylesheet" type="text/css" href="/stylesheets/navbar.css" />
+
+  <!---------------------------------Login css Files--------------------------->
+  <link rel="stylesheet" type="text/css" href="/stylesheets/login-register.css" />
+
+  <!---------------Css file for responsiveness------------------>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/responsive-breakpoints.css" />
+
+
+
+
+
+
+
+</head>
+
+<body>
+  <!------------------------------------Navigation Bar Section-One------------------------------------------>
+
+  <nav id="nav-header" class="navbar navbar-expand-lg navbar-light  sticky-top  ">
+    <a class="navbar-brand" href="/"><img src="/images/Spanish-bolo-natraj-transparent.png" class="logo-navbar"
+        alt="Logo Of Baila Bollywood"></a>
+    <button class="navbar-toggler border  mr-3" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center " id="navbarSupportedContent">
+      <ul class="navbar-nav nav nav-pills ">
+        <li class="nav-item m-xl-2 active">
+          <a class="nav-link text-center text-white " href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item m-xl-2">
+          <a class="nav-link text-center text-white " href="/#about">About Us</a>
+        </li>
+        <li class="nav-item m-xl-2">
+          <a class="nav-link text-center text-white " href="/#blogs">Our Blogs</a>
+        </li>
+        <li class="nav-item m-xl-2">
+          <a class="nav-link text-center text-white " href="/#pop-categ">Most Popular Categories</a>
+        </li>
+        <li class="nav-item m-xl-2">
+          <a class="nav-link text-center text-white " href="/#found-note">Founders's Note</a>
+        </li>
+        <li class="nav-item m-xl-2">
+          <a class="nav-link text-center text-white " data-toggle="modal" data-target="#exampleModalCenter">Contact
+            Us</a>
+        </li>
+
+      </ul>
+      <form class="form-inline  log-reg-btn ml-xl-5 ml-lg-5  justify-content-center">
+        <% if(!currentUser) {%>
+        <a class="btn  mr-xl-3 mr-lg-3 mr-md-3 mr-sm-3 mr-3 login-btn " href="/login" target="_top"><i
+            class="fa fa-sign-in"></i> Login</a>
+        <a class="btn ml-xl-3 ml-lg-3 ml-md-3 ml-sm-3  register-btn " href="/register" target="_top"><i
+            class="fa fa-user-plus"></i> Register</a>
+        <% }else{ %>
+        <a class="btn  mr-xl-3 mr-lg-3 mr-md-3 mr-sm-3 mr-3 login-btn " href="/logout" target="_top"><i
+            class="fa fa-sign-in"></i> Logout</a>
+        <a class="btn  mr-xl-3 mr-lg-3 mr-md-3 mr-sm-3 mr-3 login-btn " href="/dashboard" target="_top"><i
+            class="fa fa-heart"></i> My Dashboard</a>
+        <% } %>
+      </form>
+    </div>
+  </nav>
+
+  <div class="container">
+    <% if(error && error.length>0) { %>
+    <div class="text-white bg-primary text-center font-weight-bold" role="alert">
+      <%=error%>
+    </div>
+    <% } %>
+    <% if(success && success.length>0) { %>
+    <div class="text-white bg-primary text-center font-weight-bold" role="alert">
+      <%=success%>
+    </div>
+    <% } %>
+  </div>
+
+  <!-----------------------------Register-Menu--------------------------------------->
+  <section class="register-section" id="registerMenu">
+    <div class="container">
+
+      <div class="row container-row ">
+
+        <div class="col-xl-7 col-lg-7 jumbotron position-relative register-left-image-content  ">
+
+        </div>
+
+        <div class="col-xl-4 col-lg-4 form-column   ">
+          <form class="mt-4" action="/register" method="POST">
+            <div class="display-4   text-center"><i style="color:#ec2F4B;" class="fa fa-user-plus mr-3"></i> Sign Up
+            </div>
+            <div class="w-100 ">
+
+              <div class="form-group ">
+                <label for="txtname" class="bg-white name-label"> <i style="color:#00F260 ;"
+                    class="fa fa-user ml-1 mr-2"></i>Name</label>
+                <input type="text" required class="form-control" id="txtname" name="username"
+                  placeholder="Enter Your Name">
+              </div>
+
+              <div class="form-group ">
+                <label for="txtmail" class="bg-white email-label"><i style="color:#f7b733 ;"
+                    class="fa fa-envelope ml-1 mr-2"></i> Email</label>
+                <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{3,}$"
+                  title="Please Enter a Valid Email Address" id="txtmail" required="required" class="form-control"
+                  name="email" placeholder="Enter Your Email" />
+              </div>
+
+
+
+              <div class="form-group">
+                <label for="txtpass" class="bg-white pass-label"><i style="color:#667db6 ;"
+                    class="fa fa-key ml-1 mr-2"></i>Password</label>
+                <input type="password" id="txtpass" required="required" autocomplete="on" name="password"
+                  class="form-control" placeholder="Enter Your Password" />
+
+              </div>
+
+              <div class="form-group ">
+                <div class="row">
+                  <div class="col">
+                    <!------------Take the user back to the Login screen when succesfully registered------->
+                    <button class="btn-register btn ">Register</button>
+                  </div>
+                  <!--<small id="emailHelp" class="form-text mt-3 mb-3 font-italic  text-left"><strong>Already a User<i style="color:#ec2F4B;" class="fas fa-laugh-beam ml-1"></i></strong></small>
+                -->
+                  <div class="col">
+
+                    <a class="btn-login btn " href="/login" target="_top">Login</a>
+                  </div>
+                </div>
+              </div>
+              <div id="message">
+                <h3>Password must contain the following:</h3>
+                <p id="letter" class="invalid font-weight-bold">A <b>lowercase</b> letter</p>
+                <p id="capital" class="invalid font-weight-bold">A <b>capital (uppercase)</b> letter</p>
+                <p id="number" class="invalid font-weight-bold">A <b>number</b></p>
+                <p id="length" class="invalid font-weight-bold">Minimum <b>8 characters</b></p>
+              </div>
+
+              <!------------------Social Media Sign In section--------------->
+              <h3 class="text-center display-4 or-seperator ">Or</h3>
+              <hr class="social-media-login-seperator">
+              <h4 class="text-center mt-5">Sign in with your Social Media Accounts </h4>
+
+              <div class="form-group mt-4">
+                <a href="/auth/facebook">
+                  <h4 style="text-decoration:none;" class=" facebook-login p-3"><i
+                      class="fab fa-facebook-f  mr-3"></i>Sign Up with Facebook</h4>
+                </a>
+              </div>
+              <div class="form-group">
+                <a href="/auth/google">
+                  <h4 style="text-decoration:none;" class=" google-login p-3"><i class="fab fa-google mr-3 "></i>Sign Up
+                    with
+                    Google</h4>
+                </a>
+              </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!---------------------------------------------------------- Modal Box----------------------------------------------- -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header ">
+          <h5 class="modal-title ml-auto mr-auto" id="exampleModalLongTitle"><i class="fa fa-id-card mr-3"
+              style="color:#f5af19;"></i>Contact Us</h5>
+          <button type="button" class="close ml-0" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          <form class="contact-us" id="contact-form" action="/contact-us" method="POST">
+            <div class="form-group ">
+              <label for="txtname" class="bg-white name-label"> <i style="color:#00F260 ;"
+                  class="fa fa-user ml-1 mr-2"></i>Email</label>
+              <input type="email" required class="form-control" id="txtname" name="email"
+                placeholder="Enter Your Email-Id">
+            </div>
+            <div class="form-group ">
+              <label for="txtsubject" class="bg-white subject-label"><i style="color:#ec2F4B;"
+                  class="fa fa-book mr-1"></i> Subject</label>
+              <input type="text" name="subject" required class="form-control" id="txtsubject"
+                placeholder="Enter the Subject">
+            </div>
+            <div class="form-group">
+              <label for="message" class="bg-white email-label"> <i style="color:#667db6 ;"
+                  class="fa fa-comments  ml-1 mr-2"></i>Message</label>
+              <textarea style="height:200px;" name="text" class="form-control" id="message-query"
+                placeholder="Type Your Query Here"></textarea>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-close" data-dismiss="modal">Close</button>
+              <button class="btn btn-save">Submit</button>
+            </div>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <p class="footer-section m-0">
+    Website Made With &hearts; By <a href=" https://www.linkedin.com/in/vaibhav-kaul-ab5941182/"
+      class="text-white mx-1 font-weight-bold" target="_blank" title="Vaibhav's Linkedin Profile">Vaibhav Kaul</a>
+    And <a href="https://www.linkedin.com/in/pawan-saggu-06589b157/" class="text-white font-weight-bold mx-1"
+      target="_blank" title="Pawan's Linkedin Profile">Pawan Saggu</a>
+    <br />
+    &copy; 2019 Copyright BailaBollywood<img src="/images/Spanish-bolo-natraj-transparent.png">
+  </p>
+</body>
+<script>
+  var load = document.getElementById('loader');
+  function myloader() {
+    load.style.display = "none";
+  }
+</script>
+
+<!--------------------------------------local Javascrpt files--------------------------------------------------------->
+<script src="/scripts/sticky-navbar.js"></script>
+<script src="../scripts/validate-password.js"></script>
+
+<!-------------------------bootstrap javascript----------------------------->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!--
+      <script>
+        var stateObj;
+        history.pushState(stateObj, "page without extension", "register");
+      </script>
+      -->
+
+</html>

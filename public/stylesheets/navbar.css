@@ -1,0 +1,82 @@
+#nav-header
+{
+ padding-right:0;
+}
+.navbar,
+.navbar-expand-lg,
+navbar-light
+{
+  background:linear-gradient(to bottom,rgba(1,1,1,0.8) ,rgba(0, 29, 56, 1) );
+
+}
+ .navbar .navbar-collapse .navbar-nav .nav-item .nav-link
+{
+  margin-right:auto;
+  margin-left:auto;
+  font-weight: 100;
+  color:#fff;
+}
+.navbar-toggler
+{
+  padding:10px;
+  border:1px solid grey ;
+  border-radius:10px;
+ }
+.navbar-toggler-icon
+{
+  height:30px;
+  width:30px;
+  content:url('../images/navbar-toggler-icon.png');
+}
+
+.logo-navbar
+{
+  width:80px;
+  height:80px;
+}
+.navbar-nav
+{
+  margin-right: 0;
+}
+
+.login-image
+{
+    height:30px;
+    width:30px;
+    border-radius: 50%;
+}
+.login-btn,
+.register-btn
+{
+  color:#fff;
+  font-weight:100;
+  font-size:1.2rem;
+
+  border:1px solid #fff;
+  
+}
+.login-btn:hover,
+.register-btn:hover
+{
+  background:#fff;
+  font-weight:900;
+  color:rgba(0, 29, 56, 1);
+  border-color:#fff;
+}
+
+.navbar-collapse ul:hover li a
+
+{
+  transform: scale(1);
+  opacity: 1;
+  filter: blur(2px);
+
+}
+
+.navbar-collapse ul li a:hover
+{
+  transform:scale(1.5);
+  opacity:1 ;
+  filter: blur(0);
+  border-bottom:1px solid #ffbf00;
+}

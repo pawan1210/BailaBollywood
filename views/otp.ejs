@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!--Title of the Website-->
+    <title>Baila Bollywood</title>
+    <!--Meta tags for SEO-->
+    <meta name="description"
+        content="A Spanish Language Portal on Indian Dance Songs Subtitled into Spanish Language.Spanish Speakers can watch Bollywood Songs with Spanish Subtitles.">
+    <meta name="robots" content="index, follow">
+    <!--Meta tag for Responsiveness-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--Title bar Icon-->
+    <link rel="icon" href="/images/Spanish-bolo-natraj-transparent.png" />
+    <!---------------Bootstrap Stylesheet---------------------------------------->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!---------------------------Google Fonts----------------------------------------->
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200&display=swap" rel="stylesheet">
+    <!------------------Font Awesome Icons----s-------------------->
+    <script src="/scripts/all.min.js"></script>
+    <script src="/scripts/fontawesome.min.js"></script>
+
+    <!-------------------Custom css files------------------------------->
+    <!----------------------------Navbar Css Files---------------------->
+    <link rel="stylesheet" type="text/css" href="/stylesheets/navbar.css">
+
+    <!---------------Css file for responsiveness------------------>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/responsive-breakpoints.css">
+
+    <!--Web app manfest file for ios support -->
+    <link rel="apple-touch-icon" href="/images/baila-bollywood-icon.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#373B44" />
+    <!--Web app manfest file for android devices-->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#373B44" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Titillium Web', sans-serif;
+
+        }
+
+        body {
+            background: url("../images/section-background.jpg");
+        }
+
+        .email-label,
+        .phone-label {
+            position: relative;
+            top: 25px;
+            left: 20px;
+            color: rgba(220, 36, 36, 1);
+            font-size: 1.5rem;
+        }
+
+        .form-control {
+            height: 60px;
+            border: 1px solid #373B44;
+        }
+
+        a {
+            color: #fff;
+        }
+
+        .btn-recovery {
+            margin: 3rem 0 0 0;
+            height: 70px;
+            font-size: 1.5rem;
+            width: 100%;
+            line-height: 50px;
+            font-weight: bolder;
+            letter-spacing: 2px;
+            color: #fff;
+            background: rgba(0, 29, 56, 1);
+        }
+
+        .btn-recovery:hover {
+            color: rgba(0, 29, 56, 1);
+            background: #fff;
+            border: 1px solid rgba(0, 29, 56, 1);
+        }
+
+        .btn-recovery:hover a {
+            color: rgba(0, 29, 56, 1);
+
+        }
+
+        .back-to-login {
+            background: rgba(0, 29, 56, 1);
+        }
+
+        /* Footer */
+        .footer-section {
+            width: 100%;
+            min-height: 50px;
+            background: rgba(0, 29, 56, 1);
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .footer-section img {
+            height: 30px;
+            width: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="pass-recovery-otp" id="pass_Recovery">
+        <div class="container-fluid">
+            <div class="jumbotron bg-white enterOTP enter-OTP-jumbotron ">
+                <form method="POST">
+                    <a href="/login/forgotPassword" class="btn back-to-login text-white mb-5"
+                        target="_top">&lArr;&nbsp;Back to
+                        Recover Password</a>
+                    <h1 class="text-center">Enter OTP</h1>
+
+                    <div class="form-group otp-input">
+                        <input type="number" name="number" class="form-control font-weight-bold  mx-auto"
+                            required="required" />
+                    </div>
+                    <div class="form-group otp-submit ">
+                        <button type="submit" class="btn btn-recovery"><a
+                                href="password-change.html">Submit</a></button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-------------------------bootstrap javascript----------------------------->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

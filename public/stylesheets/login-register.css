@@ -1,0 +1,294 @@
+*
+{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: 'Titillium Web', sans-serif ;
+    font-display: fallback;
+}
+#loader
+{
+    height:100vh;
+    width:100%;
+    position:fixed;
+    overflow-y:hidden;
+    z-index: 999999;
+    animation:preloader 1s ease infinite alternate;
+    transition: all 0.5s ease ;
+}
+
+@keyframes preloader
+{
+    0%
+    {
+        background:rgba(0, 29, 56, 1) url("../images/baila-bollywood-icon.png") no-repeat center;
+    background-size: 200px 200px;
+        transform: scale(1.2);
+    }
+    100%
+    {
+        background:rgba(0, 29, 56, 1) url("../images/baila-bollywood-icon-red.png") no-repeat center;
+        background-size: 200px 200px;
+        transform: scale(1);
+    }
+
+}
+body
+{
+    background:url("https://drive.google.com/uc?id=1zjSPYS57_pXK_Oh0Tfslubdo_7wharl4");
+}
+
+.container-row
+{
+    width:100%;
+    min-height:500px;
+    margin:5rem auto;
+    box-shadow:0 0px 8px 0 rgb(0, 29, 56);
+    border-radius:20px;
+    background:#fff;
+}
+
+.jumbotron
+{
+    border-radius:0px;
+}
+
+.form-text
+{
+    
+    color:#373B44;
+    font-size:0.9rem;
+}
+/*Modal box contact form*/
+.modal-header
+{
+    box-shadow:0px 0px 25px 0px;
+}
+.modal-title
+{
+    font-size:2.1em;
+    font-weight:900;
+}
+/*Register and Login form Labels*/
+.name-label,
+.email-label,
+.subject-label,
+.pass-label,
+.phone-label
+{
+    position:relative;
+    top:30px;
+    left:20px;
+    color:rgba(220, 36, 36, 1);
+    font-size:1.5rem;
+}
+/*Login page spanish man image*/
+.login-right-image-content
+{
+
+    min-height:100%;
+    margin:0;
+    border-radius:0px 20px 20px 0px;
+    background:white;
+    background-image: url('https://drive.google.com/uc?id=1CezFgvGvyz4uhuXOJd1ijzYHPDzOror6');
+    background-size:100% 100%;
+   
+}
+/*Register page spanish man image*/
+.register-left-image-content
+{
+  
+    min-height:100%;
+    margin:0;
+    background:#fff;
+    border-radius:20px 0px 0px 20px;
+     background-image: url('https://drive.google.com/uc?id=1CezFgvGvyz4uhuXOJd1ijzYHPDzOror6');
+     background-size:100% 100%;
+}
+.btn-close
+{
+    background:#b92b27;
+    color:#fff;
+    font-weight:900;
+}
+.btn-save
+{
+    background:#3b5999;
+    color:#fff;
+    font-weight:900;
+}
+/*Login and registeraton form*/
+.form-control
+{
+    height:60px;
+    border:1px solid #373B44;
+}
+.form-control[placeholder]
+{
+    margin-top:10px;
+   
+}
+.form-control:focus
+{
+    border-color:rgba(220, 36, 36, 1);
+}
+/*Regster page Register here button*/
+.btn-register
+{
+    height:70px;
+    font-size:1.5rem;
+    width:100%;
+    line-height:50px;
+     font-weight:bolder;
+    letter-spacing:2px;
+    color:#fff;
+    background:rgba(0, 29, 56, 1);
+}
+.btn-register:hover
+{
+    color:rgba(0, 29, 56, 1);
+    background:#fff;
+    border:1px solid rgba(0, 29, 56, 1);
+}
+/*Login page login button*/
+.btn-login
+{
+    font-size:1.5rem;
+    letter-spacing:2px;
+    height:70px;
+    color:rgba(0, 29, 56, 1);
+    background:#fff;
+    border:1px solid rgba(0, 29, 56, 1);
+    line-height:55px;
+     width:100%;
+     font-weight:bolder;
+}
+.btn-login:hover
+{
+    color:#fff;
+    background:rgba(0, 29, 56, 1);
+}
+.login-menu-spanish-man
+{
+    height:100px;
+    width:100px;
+}
+/*Seperator line */
+.or-seperator
+{
+    position:relative;
+    top:55px;
+    background:#fff;
+    width:80px;
+    height:80px;
+    line-height:80px;
+    border-radius:50%;
+    border:1px solid rgba(0,29,56,1);
+    margin:0 auto;
+}
+/*SOcial media login and register*/
+.social-media-login-seperator
+{
+   border:1px solid rgba(0, 29, 56, 1);
+}
+.facebook-login
+{
+    color:#fff;
+    background:#3b5999;
+    border:1px solid #3b5999;
+    text-align:center;
+    transition:0.5s all;
+    border-radius:50px;
+}
+
+.google-login
+{
+    color:#fff;
+     transition:0.5s all;
+    background:#dd4b39;
+    border:1px solid #dd4b39;
+    text-align:center;
+    border-radius:50px;
+}
+
+
+.facebook-login:hover
+{
+    color:#3b5999;
+    background:#fff;
+    border-color:#3b5999;
+}
+.google-login:hover
+{
+    color:#dd4b39;
+    background:#fff;
+    border-color:#dd4b39;
+}
+
+.media-object-ref
+{
+    height:400px;
+    width:400px;
+    display:flex;
+    justify-content:space-around;
+}
+.media-object-ref img
+{
+    height:80px;
+    width:80px;
+   display:inline-block;
+}
+/*Password validation css for rgisteration page*/
+/* The message box is shown when the user clicks on the password field */
+#message {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  #message p {
+    padding: 10px 35px;
+    font-size: 18px;
+  }
+  
+  /* Add a green text color and a checkmark when the requirements are right */
+  .valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+  }
+  
+  /* Add a red text color and an "x" when the requirements are wrong */
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+  }
+
+/* Footer */
+.footer-section
+{
+    width:100%;
+    min-height:50px;
+    background:rgba(0, 29, 56, 1);
+    color:white;
+    text-align:center;
+    padding:10px;
+}
+.footer-section img
+{
+    height:30px;
+    width:30px;
+}
+

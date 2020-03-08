@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!--Title of the Website-->
+  <title>Baila Bollywood</title>
+
+  <!--Meta tags for SEO-->
+  <meta name="description"
+    content="A Spanish Language Portal on Indian Dance Songs Subtitled into Spanish Language.Spanish Speakers can watch Bollywood Songs with Spanish Subtitles.">
+  <meta name="robots" content="index, follow">
+
+  <!--Meta tag for Responsiveness-->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <!--Title bar Icon-->
+  <link rel="icon" href="/images/dummy-image.png">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!---------------------------Google Fonts----------------------------------------->
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200&display=swap" rel="stylesheet">
+
+  <!-------------------------------------Font Awesome Icons----------------------------------------->
+  <script src="/scripts/all.min.js"></script>
+  <script src="/scripts/fontawesome.min.js"></script>
+
+
+  <!-------------------Custom css files------------------------------->
+
+  <!----------------------------Navbar Css Files---------------------->
+  <link rel="stylesheet" type="text/css" href="/stylesheets/navbar.css">
+
+  <!---------------------------------Login css Files--------------------------->
+  <link rel="stylesheet" type="text/css" href="/stylesheets/login-register.css">
+
+  <!---------------Css file for responsiveness------------------>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/responsive-breakpoints.css">
+
+
+
+
+
+
+
+</head>
+
+<body>
+  <!------------------------------------Navigation Bar Section-One------------------------------------------>
+
+  <nav id="nav-header" class="navbar navbar-expand-lg navbar-light  sticky-top  ">
+    <a class="navbar-brand" href="#"><img src="/images/dummy-image.png" class="logo-navbar"
+        alt="Logo Of Baila Bollywood"></a>
+    <button class="navbar-toggler border rounded mr-3" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center " id="navbarSupportedContent">
+      <ul class="navbar-nav nav nav-pills ">
+        <li class="nav-item m-xl-2 active">
+          <a class="nav-link text-center text-white " href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item m-xl-2">
+          <a class="nav-link text-center text-white " href="#">About Us</a>
+        </li>
+        <li class="nav-item m-xl-2">
+          <a class="nav-link text-center text-white " href="#">Search By Alphabet</a>
+        </li>
+        <li class="nav-item m-xl-2">
+          <a class="nav-link text-center text-white " href="#">Most Popular Categories</a>
+        </li>
+        <li class="nav-item m-xl-2">
+          <a class="nav-link text-center text-white " href="#">Founders's Note</a>
+        </li>
+        <li class="nav-item m-xl-2">
+          <a class="nav-link text-center text-white " data-toggle="modal" data-target="#exampleModalCenter">Contact
+            Us</a>
+        </li>
+
+      </ul>
+      <form class="form-inline  log-reg-btn ml-xl-5 ml-lg-5  justify-content-center">
+        <a class="btn   mr-3 login-btn " href="#" target="_top"><i class="fas fa-sign-in-alt"></i> Login</a>
+        <a class="btn   ml-3 register-btn " href="#" target="_top"><i class="fas fa-user-plus"></i> Register</a>
+      </form>
+    </div>
+  </nav>
+
+  <div class="container">
+    <% if(error && error.length>0) { %>
+    <div class="alert alert-danger" role="alert">
+      <%=error%>
+    </div>
+    <% } %>
+    <% if(success && success.length>0) { %>
+    <div class="alert alert-success" role="alert">
+      <%=success%>
+    </div>
+    <% } %>
+  </div>
+
+  <!---------------------------------------------------------- Modal Box----------------------------------------------- -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header ">
+          <h5 class="modal-title ml-auto mr-auto" id="exampleModalLongTitle"><i class="fa fa-id-card mr-3"
+              style="color:#f5af19;"></i>Contact Us</h5>
+          <button type="button" class="close ml-0" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+          <form class="contact-us" id="contact-form" enctype="text/plain" method="POST">
+            <div class="form-group ">
+              <label for="txtname" class="bg-white name-label"> <i style="color:#00F260 ;"
+                  class="fa fa-user ml-1 mr-2"></i>Email</label>
+              <input type="email" required class="form-control" id="txtname" name="mail" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group ">
+              <label for="txtsubject" class="bg-white subject-label"><i style="color:#ec2F4B;"
+                  class="fa fa-book mr-1"></i> Subject</label>
+              <input type="text" name="subject" required class="form-control" id="txtsubject"
+                placeholder="Enter the Subject">
+            </div>
+            <div class="form-group">
+              <label for="message" class="bg-white email-label"> <i style="color:#667db6 ;"
+                  class="fa fa-comments  ml-1 mr-2"></i>Message</label>
+              <textarea style="height:200px;" class="form-control" id="message"
+                placeholder="Type Your Query Here"></textarea>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <input type="submit" class="btn btn-light" value="Save Changes" />
+            </div>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
