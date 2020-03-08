@@ -46,7 +46,7 @@ passport.use('local',
 passport.use(new GoogleStrategy({
     // options for google stratrgy.
 
-    callbackURL: "https://bailabollywood.herokuapp.com/auth/google/redirect",
+    callbackURL: "https://bailabollywood.com:3000/auth/google/redirect",
     clientID: keys.google.clientID,
     clientSecret: keys.google.clientSecret
 
@@ -77,7 +77,7 @@ passport.use(new GoogleStrategy({
 passport.use(new FacebookStrategy({
     // options for google stratrgy.
 
-    callbackURL: "https://bailabollywood.herokuapp.com/auth/facebook/redirect",
+    callbackURL: "https://bailabollywood.com:3000/auth/facebook/redirect",
     clientID: keys.facebook.clientID,
     clientSecret: keys.facebook.clientSecret
 
