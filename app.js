@@ -14,7 +14,7 @@ const middleware = require('./middleware/index');
 const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
 const Promise = require('promise');
-const port =  80;
+const port =  3000;
 
 
 
