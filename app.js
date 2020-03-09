@@ -91,7 +91,12 @@ var mailOptions3 = {
 app.get("/", function (req, res) {
   feed.load("https://medium.com/feed/@bailabollywood20", (err, rss) => {
 
-    res.render("landing", { blogs: rss });
+    if (err) {
+      res.redirect("/");
+    }
+    else {
+      res.render("landing", { blogs: rss });
+    }
   });
 });
 
