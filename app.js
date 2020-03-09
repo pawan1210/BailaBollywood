@@ -95,7 +95,7 @@ app.get("/", function (req, res) {
   });
 });
 
-app.get("/register", function (req, res) {
+app.get("/register",middleware.isLoggedIn1, function (req, res) {
   res.render("register");
 });
 
@@ -243,8 +243,8 @@ app.get("/auth/facebook/redirect", passport.authenticate('facebook', {
   failureRedirect: "/"
 }), (req, res) => {
   console.log(req.user);
-  req.flash("success", "Welcome to BailaBollywood " + req.user.provider);
-  res.redirect("/");
+  req.flash("success", "Welcome to BailaBollywood " + req.user.username);
+  res.redirect("/dashboard");
 });
 
 
