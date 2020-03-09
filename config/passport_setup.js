@@ -85,7 +85,7 @@ passport.use(new FacebookStrategy({
     //callback function for passport.
     console.log(profile);
     // check if user already exists in the db.
-    User.findOne({ email: profile.email }).then((currentUser) => {
+    User.findOne({ username:profile.displayName }).then((currentUser) => {
         if (currentUser) {
             // already have the user.
             console.log("User already exists");
