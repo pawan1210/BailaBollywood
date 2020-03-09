@@ -93,8 +93,7 @@ passport.use(new FacebookStrategy({
         } else {
             // create new User.
             new User({
-                username: profile.first_name,
-                email: profile.email
+                username: profile.displayName,
             }).save().then((newUser => {
                 console.log(newUser);
                 done(null, newUser);
