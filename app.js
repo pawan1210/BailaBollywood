@@ -99,7 +99,7 @@ app.get("/register",middleware.isLoggedIn1, function (req, res) {
   res.render("register");
 });
 
-app.get("/dashboard",middleleware.isLoggedIn, function (req, res) {
+app.get("/dashboard",middleware.isLoggedIn, function (req, res) {
 
   res.render("dashboard");
 });
