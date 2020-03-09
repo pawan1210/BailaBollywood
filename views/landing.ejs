@@ -362,7 +362,7 @@
         <%blogs.items.forEach(function(blog){%>
         <div class="swiper-slide notranslate">
           <div class="overlay-blog"></div>
-          <img class="review-image" src="/images/baila-bollywood-icon.png">
+          <img class="review-image" src=<%=blog.imgUrl%>>
 
           <a href=<%=blog.link%> style=" text-decoration:none; color:white; font-size:2rem;" class="blog-name mb-5"
             target="_blank"><%=blog.title%></a>
