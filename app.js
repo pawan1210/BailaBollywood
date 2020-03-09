@@ -95,6 +95,21 @@ app.get("/", function (req, res) {
       res.redirect("/");
     }
     else {
+      rss.items.forEach((item) => {
+        var str = (item.content_encoded);
+        var output = "";
+        var n = str.indexOf("img");
+        str = str.substring(n + 16);
+        for (var i = 0; i < str.length; i++) {
+          if (str[i] == '"') {
+            break;
+          }
+          output += str[i];
+        }
+        item["imgUrl"] = output;
+
+      });
+      console.log(rss);
       res.render("landing", { blogs: rss });
     }
   });
