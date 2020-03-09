@@ -77,7 +77,7 @@ passport.use(new GoogleStrategy({
 passport.use(new FacebookStrategy({
     // options for google stratrgy.
 
-    callbackURL: "https://bailabollywood.com/auth/facebook/redirect",
+    callbackURL: "http://localhost:3000/auth/facebook/redirect",
     clientID: keys.facebook.clientID,
     clientSecret: keys.facebook.clientSecret
 
@@ -85,7 +85,7 @@ passport.use(new FacebookStrategy({
     //callback function for passport.
     console.log(profile);
     // check if user already exists in the db.
-    User.findOne({ username:profile.displayName }).then((currentUser) => {
+    User.findOne({ fbId: profile.id }).then((currentUser) => {
         if (currentUser) {
             // already have the user.
             console.log("User already exists");
@@ -94,6 +94,7 @@ passport.use(new FacebookStrategy({
             // create new User.
             new User({
                 username: profile.displayName,
+                fbId: profile.id
             }).save().then((newUser => {
                 console.log(newUser);
                 done(null, newUser);
