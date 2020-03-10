@@ -26,7 +26,7 @@
 
   <!-------------------------------------Font Awesome Icons----------------------------------------->
   <script async defer src="/scripts/all.min.js"></script>
-  <script async defer src="/scripts/fontawesome.min.js">
+<link rel="stylesheet" href=“https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css” />
   </script>
 
 
@@ -87,12 +87,12 @@
       <form class="form-inline  log-reg-btn ml-xl-5 ml-lg-5  justify-content-center">
         <% if(!currentUser) {%>
         <a class="btn  mr-xl-3 mr-lg-3 mr-md-3 mr-sm-3 mr-3 login-btn " href="/login" target="_top"><i
-            class="fa fa-sign-in"></i> Login</a>
+            class="fas fa-sign-in-alt"></i> Login</a>
         <a class="btn ml-xl-3 ml-lg-3 ml-md-3 ml-sm-3  register-btn " href="/register" target="_top"><i
             class="fa fa-user-plus"></i> Register</a>
         <% }else{ %>
         <a class="btn  mr-xl-3 mr-lg-3 mr-md-3 mr-sm-3 mr-3 login-btn " href="/logout" target="_top"><i
-            class="fa fa-sign-in"></i> Logout</a>
+            class="fas fa-sign-in-alt"></i> Logout</a>
         <a class="btn  mr-xl-3 mr-lg-3 mr-md-3 mr-sm-3 mr-3 login-btn " href="/dashboard" target="_top"><i
             class="fa fa-heart"></i> My Dashboard</a>
         <% } %>
