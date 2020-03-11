@@ -66,7 +66,7 @@ var mailOptions = {
   to: "",
   subject: "bailaBollywood-Thanks for Registration",
   text: "",
-  html: '<img src="cid:batman" /> <br><h3>Thank you for registration<h3/><br>',
+  html: '<img src="cid:batman" /> <br><h3>Bienvenido a la familia de  Bailabollywood. Te invitamos a explorar el mundo mágico de la India a através de sus bailes, músicas y la cultura colorida.<h3/><br>',
   attachments: [{
     filename: 'foremail.png',
     path: process.cwd() + '/foremail.png',
@@ -181,7 +181,7 @@ app.post("/register", function (req, res) {
 
 
 app.post("/contact-us", (req, res) => {
-  mailOptions2.subject = "User Query - " + req.body.email;
+  mailOptions2.subject = req.body.email+" "+req.body.subject ;
   mailOptions2.text = req.body.text;
   transporter.sendMail(mailOptions2, function (err, info) {
     if (err) {
