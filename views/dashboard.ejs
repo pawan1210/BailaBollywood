@@ -12,12 +12,10 @@
 
     <!---------------------------Google Fonts----------------------------------------->
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200&display=swap" rel="stylesheet" />
-    <!------------------Font Awesome Icons----s-------------------->
-    <script src="/scripts/all.min.js"></script>
-    <script src="/scripts/fontawesome.min.js"></script>
+
 
     <!--Web app manfest file for ios support -->
-    <link rel="apple-touch-icon" href="/images/baila-bollywood-icon.png" />
+    <link rel="apple-touch-icon" href="https://drive.google.com/uc?id=1xKggmfNIkigJXy6HKUDdFEwIy-uGVjiF" />
     <meta name="apple-mobile-web-app-status-bar" content="#373B44" />
     <!--Web app manfest file for android devices-->
     <link rel="manifest" href="/manifest.json" />
@@ -43,8 +41,11 @@
     <link rel="stylesheet" href="/stylesheets/responsive-breakpoints.css" />
 </head>
 
-<body>
-    <div class="header   ">
+<body id="main-body">
+
+
+
+    <div class="header sticky-top">
         <nav id="nav-header" class="justify-content-between navbar">
             <a class="navbar-brand" href="/"><img src="/images/Spanish-bolo-natraj-transparent.png"
                     class="logo-navbar-left" alt="Logo Of Baila Bollywood"></a>
@@ -54,7 +55,7 @@
                 <button class="btn  dropdown-toggle text-white" type="button" id="dropdownMenuButton"
                     style=" background-color: transparent;" data-toggle="dropdown" aria-haspopup="true"
                     aria-expanded="false">
-                     Signed In As <%=currentUser.username%>
+                    Signed in as <%=currentUser.username%>
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item" href="/logout">Logout</a>
@@ -69,138 +70,163 @@
         <div class="container-fluid">
             <div class="row ">
                 <div class="pg-con-video-player  col-xl-8 col-lg-8  ">
-                    <iframe class="video-content-frame " name="videoScreenPlayer"
-                        src="/images/dashboard-frame-image.jpg" id="VideoContent" allowfullscreen>
+                    <iframe class="video-content-frame " name="videoScreenPlayer" title="Video Frame For Videos"
+                        src="https://drive.google.com/uc?id=1AFtIO6LQAlArFgpkwMvImmIMRn5nDZTE" id="VideoContent"
+                        allowfullscreen>
                     </iframe>
-                    <img src="/images/dance-indian.jpg" class="img-fluid img-dance-indian" alt="Indian Dance Image">
+                    <img src="/images/baila-bollywood-transparent.png" class="img-fluid image-below-video-frame"
+                        alt="Indian Dance Image">
                 </div>
                 <div class="pg-con-music-playlist   col-xl-4 col-lg-4  ">
                     <div class="row music-playlist-row ">
                         <!----------------------------- 101-112 ----------------------------->
                         <div class="music-media-101  col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-101">
-                                <img src="/images/dummy-image.png" class="img-music" id="img-101" alt="Dummy text" />
-                                <h4 class="media-heading" id="head-101"><span class="counter"></span>Dummy Heading</h4>
+                            <a href="https://www.youtube.com/embed/FqMB9pWTJpk" target="videoScreenPlayer"
+                                id="link-101">
+                                <img src="/images/video-poster-dashboard/aaja-sanam-madhur-chandani.jpg"
+                                    class="img-music" id="img-101" alt="Dummy text" />
+                                <h4 class="media-heading" id="head-101"><span class="counter"></span>Aaja Sanam Madhur
+                                    Chandani</h4>
                             </a>
                         </div>
                         <div class="music-media-102 col-6  media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-102">
-                                <img src="/images/dummy-image.png" id="img-102" class="img-music" alt="Dummy text" />
-                                <h4 class="media-heading" id="head-102">Dummy Heading</h4>
+                            <a href="https://www.youtube.com/embed/FqMB9pWTJpk" target="videoScreenPlayer"
+                                id="link-102">
+                                <img src="/images/video-poster-dashboard/ajeeb-daastaan.jpg" id="img-102"
+                                    class="img-music" alt="Dummy text" />
+                                <h4 class="media-heading" id="head-102">Ajeeb Dastaan</h4>
                             </a>
                         </div>
                         <div class="music-media-103 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-103">
-                                <img src="/images/dummy-image.png" id="img-103" class="img-music" alt="Dummy Text" />
-                                <h4 class="media-heading" id="head-103">Dummy Heading</h4>
+                            <a href="https://youtube.com/embed/2oy_HOBUe1M" target="videoScreenPlayer" id="link-103">
+                                <img src="/images/video-poster-dashboard/ankhiyaan-milaake.jpg" id="img-103"
+                                    class="img-music" alt="Dummy Text" />
+                                <h4 class="media-heading" id="head-103">Ankhiyaan Milaake</h4>
                             </a>
                         </div>
 
                         <div class="music-media-104 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-104">
-                                <img src="/images/dummy-image.png" class="img-music" id="img-104" alt="Dummy text" />
-                                <h4 class="media-heading" id="head-104">Dummy Heading</h4>
+                            <a href="https://youtube.com/embed/j2t4a0233dU" target="videoScreenPlayer" id="link-104">
+                                <img src="/images/video-poster-dashboard/awara-hun.jpg" class="img-music" id="img-104"
+                                    alt="Dummy text" />
+                                <h4 class="media-heading" id="head-104">Aawara Hun</h4>
                             </a>
                         </div>
                         <div class="music-media-105 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-105">
-                                <img src="/images/dummy-image.png" id="img-105" class="img-music" alt="Dummy text" />
-                                <h4 class="media-heading" id="head-105">Dummy Heading</h4>
+                            <a href="https://youtube.com/embed/8Y7sBlMP8jY" target="videoScreenPlayer" id="link-105">
+                                <img src="/images/video-poster-dashboard/aye-mere-humsafar.jpg" id="img-105"
+                                    class="img-music" alt="Dummy text" />
+                                <h4 class="media-heading" id="head-105">Aye Mere Humsafar</h4>
                             </a>
                         </div>
                         <div class="music-media-106 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-106">
-                                <img src="/images/dummy-image.png" id="img-106" class="img-music" alt="Dummy Text" />
-                                <h4 class="media-heading" id="head-106">Dummy Heading</h4>
+                            <a href="https://youtube.com/embed/r_uKw8hbCss" target="videoScreenPlayer" id="link-106">
+                                <img src="/images/video-poster-dashboard/babuji-dheere-chalna.jpg" id="img-106"
+                                    class="img-music" alt="Dummy Text" />
+                                <h4 class="media-heading" id="head-106">Babuji Dheere Chalna</h4>
                             </a>
                         </div>
 
                         <div class="music-media-107 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-107">
-                                <img src="/images/dummy-image.png" class="img-music" id="img-107" alt="Dummy text" />
-                                <h4 class="media-heading" id="head-107">Dummy Heading</h4>
+                            <a href="https://youtube.com/embed/pXf-jeql3-k" target="videoScreenPlayer" id="link-107">
+                                <img src="/images/video-poster-dashboard/baharon-phool-barsao.jpg" class="img-music"
+                                    id="img-107" alt="Dummy text" />
+                                <h4 class="media-heading" id="head-107">Bahaaron Phool Barsao</h4>
                             </a>
                         </div>
                         <div class="music-media-108 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-108">
-                                <img src="/images/dummy-image.png" id="img-108" class="img-music" alt="Dummy text" />
-                                <h4 class="media-heading" id="head-108">Dummy Heading</h4>
+                            <a href="https://youtube.com/embed/gvELQF1Wae8" target="videoScreenPlayer" id="link-108">
+                                <img src="/images/video-poster-dashboard/beedi-jalaile.jpg" id="img-108"
+                                    class="img-music" alt="Dummy text" />
+                                <h4 class="media-heading" id="head-108">Beedi Jalaile</h4>
                             </a>
                         </div>
                         <div class="music-media-109 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-109">
-                                <img src="/images/dummy-image.png" id="img-109" class="img-music" alt="Dummy Text" />
-                                <h4 class="media-heading" id="head-109">Dummy Heading</h4>
+                            <a href="https://youtube.com/embed/2LKyE6BTlPY" target="videoScreenPlayer" id="link-109">
+                                <img src="/images/video-poster-dashboard/chalte-chalte-yuhi-koi.jpg" id="img-109"
+                                    class="img-music" alt="Dummy Text" />
+                                <h4 class="media-heading" id="head-109">Chalte Chalte Yuhi Koi</h4>
                             </a>
                         </div>
 
                         <div class="music-media-110 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-110">
-                                <img src="/images/dummy-image.png" class="img-music" id="img-110" alt="Dummy text" />
-                                <h4 class="media-heading" id="head-110">Dummy Heading</h4>
+                            <a href="https://youtube.com/embed/C4In3Iq9LvU" target="videoScreenPlayer" id="link-110">
+                                <img src="/images/video-poster-dashboard/chaudavi-ka-chaand.jpg" class="img-music"
+                                    id="img-110" alt="Dummy text" />
+                                <h4 class="media-heading" id="head-110">Chaudavi Ka Chaand</h4>
                             </a>
                         </div>
                         <div class="music-media-111 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-111">
-                                <img src="/images/dummy-image.png" id="img-111" class="img-music" alt="Dummy text" />
-                                <h4 class="media-heading" id="head-111">Dummy Heading</h4>
+                            <a href="https://youtube.com/embed/LzZVDHcogoE" target="videoScreenPlayer" id="link-111">
+                                <img src="/images/video-poster-dashboard/chura-liya-hai.jpg" id="img-111"
+                                    class="img-music" alt="Dummy text" />
+                                <h4 class="media-heading" id="head-111">Chura Liya Hai</h4>
                             </a>
                         </div>
                         <div class="music-media-112 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-112">
-                                <img src="/images/dummy-image.png" id="img-112" class="img-music" alt="Dummy Text" />
-                                <h4 class="media-heading" id="head-112">Dummy Heading</h4>
+                            <a href="https://youtube.com/embed/YZeNH59bmsk" target="videoScreenPlayer" id="link-112">
+                                <img src="/images/video-poster-dashboard/dekha-hai-pehli-baar.jpg" id="img-112"
+                                    class="img-music" alt="Dummy Text" />
+                                <h4 class="media-heading" id="head-112">Dekha Hai Pehli Baar</h4>
                             </a>
                         </div>
                         <!--------------------------------- 113-124 ---------------------------->
                         <div class="music-media-113 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-113">
-                                <img src="/images/dummy-image.png" class="img-music" id="img-113" alt="Dummy text" />
-                                <h4 class="media-heading" id="head-113">Dummy Heading</h4>
+                            <a href="https://youtube.com/embed/3odXJcp3LI4" target="videoScreenPlayer" id="link-113">
+                                <img src="/images/video-poster-dashboard/dheere-dheere-se.jpg" class="img-music"
+                                    id="img-113" alt="Dummy text" />
+                                <h4 class="media-heading" id="head-113">Dheere Dheere Se</h4>
                             </a>
                         </div>
                         <div class="music-media-114 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-114">
-                                <img src="/images/dummy-image.png" id="img-114" class="img-music" alt="Dummy text" />
-                                <h4 class="media-heading" id="head-114">Dummy Heading</h4>
+                            <a href="https://youtube.com/embed/BoFHrnYkmOk" target="videoScreenPlayer" id="link-114">
+                                <img src="/images/video-poster-dashboard/dum-maaro-dum.jpg" id="img-114"
+                                    class="img-music" alt="Dummy text" />
+                                <h4 class="media-heading" id="head-114">Dum Maaro Dum</h4>
                             </a>
                         </div>
                         <div class="music-media-115 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-1145">
-                                <img src="/images/dummy-image.png" id="img-115" class="img-music" alt="Dummy Text" />
-                                <h4 class="media-heading" id="head-115">Dummy Heading</h4>
+                            <a href="https://youtube.com/embed/VrDiGKxSO4c" target="videoScreenPlayer" id="link-1145">
+                                <img src="/images/video-poster-dashboard/ek-do-teen.jpg" id="img-115" class="img-music"
+                                    alt="Dummy Text" />
+                                <h4 class="media-heading" id="head-115">Ek Do Teen</h4>
                             </a>
                         </div>
 
                         <div class="music-media-116 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-116">
-                                <img src="/images/dummy-image.png" class="img-music" id="img-116" alt="Dummy text" />
-                                <h4 class="media-heading" id="head-116">Dummy Heading</h4>
+                            <a href="https://youtube.com/embed/cT6NcaexmkY" target="videoScreenPlayer" id="link-116">
+                                <img src="/images/video-poster-dashboard/guzaarish.jpg" class="img-music" id="img-116"
+                                    alt="Dummy text" />
+                                <h4 class="media-heading" id="head-116">Guzaarish</h4>
                             </a>
                         </div>
                         <div class="music-media-117 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-117">
-                                <img src="/images/dummy-image.png" id="img-117" class="img-music" alt="Dummy text" />
-                                <h4 class="media-heading" id="head-117">Dummy Heading</h4>
+                            <a href="https://youtube.com/embed/oQpjUkC4ez0" target="videoScreenPlayer" id="link-117">
+                                <img src="/images/video-poster-dashboard/hum-bane-tum-bane.jpg" id="img-117"
+                                    class="img-music" alt="Dummy text" />
+                                <h4 class="media-heading" id="head-117">Hum Bane Tum Bane</h4>
                             </a>
                         </div>
                         <div class="music-media-118 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-118">
-                                <img src="/images/dummy-image.png" id="img-118" class="img-music" alt="Dummy Text" />
-                                <h4 class="media-heading" id="head-118">Dummy Heading</h4>
+                            <a href="https://youtube.com/embed/g0BqpjyI678" target="videoScreenPlayer" id="link-118">
+                                <img src="/images/video-poster-dashboard/jaane-woh-kaise-logg.jpg" id="img-118"
+                                    class="img-music" alt="Dummy Text" />
+                                <h4 class="media-heading" id="head-118">Jaane Woh Kaise Logg</h4>
                             </a>
                         </div>
 
                         <div class="music-media-119 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-119">
-                                <img src="/images/dummy-image.png" class="img-music" id="img-119" alt="Dummy text" />
-                                <h4 class="media-heading" id="head-119">Dummy Heading</h4>
+                            <a href="https://youtube.com/embed/rSjDQvbLoLs" target="videoScreenPlayer" id="link-119">
+                                <img src="/images/video-poster-dashboard/jai-jai-shiv-shankar.jpg" class="img-music"
+                                    id="img-119" alt="Dummy text" />
+                                <h4 class="media-heading" id="head-119">Jai Jai Shiv Shankar</h4>
                             </a>
                         </div>
                         <div class="music-media-120 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-120">
-                                <img src="/images/dummy-image.png" id="img-120" class="img-music" alt="Dummy text" />
-                                <h4 class="media-heading" id="head-120">Dummy Heading</h4>
+                            <a href="https://youtube.com/embed/_14xOVz3Zzo" target="videoScreenPlayer" id="link-120">
+                                <img src="/images/video-poster-dashboard/jawaani-jaaneman.jpg" id="img-120"
+                                    class="img-music" alt="Dummy text" />
+                                <h4 class="media-heading" id="head-120">Jawaani Jaaneman</h4>
                             </a>
                         </div>
                         <!----------------------Load More Videos Button add up here-----------
@@ -208,199 +234,219 @@
 					----->
 
                         <div class="music-media-121 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-121">
-                                <img src="/images/dummy-image.png" id="img-121" class="img-music" alt="Dummy Text" />
-                                <h4 class="media-heading" id="head-121">Dummy Heading</h4>
+                            <a href="https://youtube.com/embed/QxZRL8EhdzU" target="videoScreenPlayer" id="link-121">
+                                <img src="/images/video-poster-dashboard/jeene-ki-tamana.jpg" id="img-121"
+                                    class="img-music" alt="Dummy Text" />
+                                <h4 class="media-heading" id="head-121">Jeene Ki Tamana</h4>
                             </a>
                         </div>
 
                         <div class="music-media-122 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-122">
-                                <img src="/images/dummy-image.png" class="img-music" id="img-122" alt="Dummy text" />
-                                <h4 class="media-heading" id="head-122">Dummy Heading</h4>
+                            <a href="https://youtube.com/embed/71elj1fKaeo" target="videoScreenPlayer" id="link-122">
+                                <img src="/images/video-poster-dashboard/kabhi-kabhi.jpg" class="img-music" id="img-122"
+                                    alt="Dummy text" />
+                                <h4 class="media-heading" id="head-122">Kabhi Kabhi</h4>
                             </a>
                         </div>
                         <div class="music-media-123 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-123">
-                                <img src="/images/dummy-image.png" id="img-123" class="img-music" alt="Dummy text" />
-                                <h4 class="media-heading" id="head-123">Dummy Heading</h4>
+                            <a href="https://youtube.com/embed/UKDa-MMFVZ4" target="videoScreenPlayer" id="link-123">
+                                <img src="/images/video-poster-dashboard/kal-ho-na-ho.jpg" id="img-123"
+                                    class="img-music" alt="Dummy text" />
+                                <h4 class="media-heading" id="head-123">Kal Ho Na Ho</h4>
                             </a>
                         </div>
                         <div class="music-media-124 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-124">
-                                <img src="/images/dummy-image.png" id="img-124" class="img-music" alt="Dummy Text" />
-                                <h4 class="media-heading" id="head-124">Dummy Heading</h4>
+                            <a href="https://youtube.com/embed/Ge-u74wcfcM" target="videoScreenPlayer" id="link-124">
+                                <img src="/images/video-poster-dashboard/khoya-khoya-chaand.jpg" id="img-124"
+                                    class="img-music" alt="Dummy Text" />
+                                <h4 class="media-heading" id="head-124">Khoya Khoya Chaand</h4>
                             </a>
                         </div>
 
                         <!----------------------------- 125-136 ----------------------------->
                         <div class="music-media-125 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-125">
-                                <img src="/images/dummy-image.png" class="img-music" id="img-125" alt="Dummy text" />
-                                <h4 class="media-heading" id="head-125">Dummy Heading</h4>
+                            <a href="https://youtube.com/embed/Dv_-aISftps" target="videoScreenPlayer" id="link-125">
+                                <img src="/images/video-poster-dashboard/kuch-kuch-hota-hai.jpg" class="img-music"
+                                    id="img-125" alt="Dummy text" />
+                                <h4 class="media-heading" id="head-125">Kuch Kuch Hota Hai</h4>
                             </a>
                         </div>
                         <div class="music-media-126 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-126">
-                                <img src="/images/dummy-image.png" id="img-126" class="img-music" alt="Dummy text" />
-                                <h4 class="media-heading" id="head-126">Dummy Heading</h4>
+                            <a href="https://youtube.com/embed/vdBRQgLL558" target="videoScreenPlayer" id="link-126">
+                                <img src="/images/video-poster-dashboard/kya-khoob-lagti-ho.jpg" id="img-126"
+                                    class="img-music" alt="Dummy text" />
+                                <h4 class="media-heading" id="head-126">Kya Khoob Lagti Ho</h4>
                             </a>
                         </div>
                         <div class="music-media-127 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-127">
-                                <img src="/images/dummy-image.png" id="img-127" class="img-music" alt="Dummy Text" />
-                                <h4 class="media-heading" id="head-127">Dummy Heading</h4>
+                            <a href="https://youtube.com/embed/oLqK0USzJZA" target="videoScreenPlayer" id="link-127">
+                                <img src="/images/video-poster-dashboard/mauja-hi-mauja.jpg" id="img-127"
+                                    class="img-music" alt="Dummy Text" />
+                                <h4 class="media-heading" id="head-127">Mauja Hi Mauja</h4>
                             </a>
                         </div>
 
                         <div class="music-media-128 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-128">
-                                <img src="/images/dummy-image.png" class="img-music" id="img-128" alt="Dummy text" />
-                                <h4 class="media-heading" id="head-128">Dummy Heading</h4>
+                            <a href="https://youtube.com/embed/p9tUI5bqHvg" target="videoScreenPlayer" id="link-128">
+                                <img src="/images/video-poster-dashboard/mere-naseeb-main.jpg" class="img-music"
+                                    id="img-128" alt="Dummy text" />
+                                <h4 class="media-heading" id="head-128">Mere Naseeb Main</h4>
                             </a>
                         </div>
                         <div class="music-media-129 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-129">
-                                <img src="/images/dummy-image.png" id="img-129" class="img-music" alt="Dummy text" />
-                                <h4 class="media-heading" id="head-129">Dummy Heading</h4>
+                            <a href="https://youtube.com/embed/u_MP89P_41g" target="videoScreenPlayer" id="link-129">
+                                <img src="/images/video-poster-dashboard/mujhe-neend-na-aaye.jpg" id="img-129"
+                                    class="img-music" alt="Dummy text" />
+                                <h4 class="media-heading" id="head-129">Mujhe Neend Na Aaye</h4>
                             </a>
                         </div>
                         <div class="music-media-130 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-130">
-                                <img src="/images/dummy-image.png" id="img-130" class="img-music" alt="Dummy Text" />
-                                <h4 class="media-heading" id="head-130">Dummy Heading</h4>
+                            <a href="https://youtube.com/embed/4WZauh7oSJw" target="videoScreenPlayer" id="link-130">
+                                <img src="/images/video-poster-dashboard/munni-badnaam.jpg" id="img-130"
+                                    class="img-music" alt="Dummy Text" />
+                                <h4 class="media-heading" id="head-130">Munni Badnaam</h4>
                             </a>
                         </div>
 
                         <div class="music-media-131 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-131">
-                                <img src="/images/dummy-image.png" class="img-music" id="img-131" alt="Dummy text" />
-                                <h4 class="media-heading" id="head-131">Dummy Heading</h4>
+                            <a href="https://youtube.com/embed/DJyVxS1vDg4" target="videoScreenPlayer" id="link-131">
+                                <img src="/images/video-poster-dashboard/pehla-nasha.jpg" class="img-music" id="img-131"
+                                    alt="Dummy text" />
+                                <h4 class="media-heading" id="head-131">Pehla Nasha</h4>
                             </a>
                         </div>
                         <div class="music-media-132 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-132">
-                                <img src="/images/dummy-image.png" id="img-132" class="img-music" alt="Dummy text" />
-                                <h4 class="media-heading" id="head-132">Dummy Heading</h4>
+                            <a href="https://youtube.com/embed/88v9Ik0mZ8U" target="videoScreenPlayer" id="link-132">
+                                <img src="/images/video-poster-dashboard/pyaar-kiya-toh.jpg" id="img-132"
+                                    class="img-music" alt="Dummy text" />
+                                <h4 class="media-heading" id="head-132">Pyaar Kiya Toh Darna Kya</h4>
                             </a>
                         </div>
                         <div class="music-media-133 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-133">
-                                <img src="/images/dummy-image.png" id="img-133" class="img-music" alt="Dummy Text" />
-                                <h4 class="media-heading" id="head-133">Dummy Heading</h4>
+                            <a href="https://youtube.com/embed/bJrMgBGRGck" target="videoScreenPlayer" id="link-133">
+                                <img src="/images/video-poster-dashboard/sun-saiba-sun.jpg" id="img-133"
+                                    class="img-music" alt="Dummy Text" />
+                                <h4 class="media-heading" id="head-133">Sun Saiba Sun</h4>
                             </a>
                         </div>
 
                         <div class="music-media-134 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-134">
-                                <img src="/images/dummy-image.png" class="img-music" id="img-134" alt="Dummy text" />
-                                <h4 class="media-heading" id="head-134">Dummy Heading</h4>
+                            <a href="https://youtube.com/embed/yWRZ_Fjx-G8" target="videoScreenPlayer" id="link-134">
+                                <img src="/images/video-poster-dashboard/tere-liye.jpg" class="img-music" id="img-134"
+                                    alt="Dummy text" />
+                                <h4 class="media-heading" id="head-134">Tere Liye</h4>
                             </a>
                         </div>
                         <div class="music-media-135 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-135">
-                                <img src="/images/dummy-image.png" id="img-135" class="img-music" alt="Dummy text" />
-                                <h4 class="media-heading" id="head-135">Dummy Heading</h4>
+                            <a href="https://youtube.com/embed/tUc-rph_wr8" target="videoScreenPlayer" id="link-135">
+                                <img src="/images/video-poster-dashboard/tip-tip-barsa-paani.jpg" id="img-135"
+                                    class="img-music" alt="Dummy text" />
+                                <h4 class="media-heading" id="head-135">Tip Tip Barsa Paani</h4>
                             </a>
                         </div>
                         <div class="music-media-136 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-136">
-                                <img src="/images/dummy-image.png" id="img-136" class="img-music" alt="Dummy Text" />
-                                <h4 class="media-heading" id="head-136">Dummy Heading</h4>
+                            <a href="https://youtube.com/embed/piTbnncYU50" target="videoScreenPlayer" id="link-136">
+                                <img src="/images/video-poster-dashboard/tujhe dekha.jpg" id="img-136" class="img-music"
+                                    alt="Dummy Text" />
+                                <h4 class="media-heading" id="head-136">Tujhe Dekha</h4>
                             </a>
                         </div>
                         <!--------------------------------- 137-148 ---------------------------->
                         <div class="music-media-137 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-137">
-                                <img src="/images/dummy-image.png" class="img-music" id="img-137" alt="Dummy text" />
-                                <h4 class="media-heading" id="head-137">Dummy Heading</h4>
+                            <a href="https://youtube.com/embed/fwfqTtkEB6o" target="videoScreenPlayer" id="link-137">
+                                <img src="/images/video-poster-dashboard/yeh-dosti.jpg" class="img-music" id="img-137"
+                                    alt="Dummy text" />
+                                <h4 class="media-heading" id="head-137">Yeh Dosti</h4>
                             </a>
                         </div>
                         <div class="music-media-138 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-138">
-                                <img src="/images/dummy-image.png" id="img-138" class="img-music" alt="Dummy text" />
-                                <h4 class="media-heading" id="head-138">Dummy Heading</h4>
+                            <a href="https://youtube.com/embed/CuMRXe23lZ0" target="videoScreenPlayer" id="link-138">
+                                <img src="/images/video-poster-dashboard/yeh-galiya-yeh-chaubara.jpg" id="img-138"
+                                    class="img-music" alt="Dummy text" />
+                                <h4 class="media-heading" id="head-138">Yeh Galiyaan Yeh Chaubaara</h4>
                             </a>
                         </div>
                         <div class="music-media-139 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-139">
-                                <img src="/images/dummy-image.png" id="img-139" class="img-music" alt="Dummy Text" />
-                                <h4 class="media-heading" id="head-139">Dummy Heading</h4>
+                            <a href="https://youtube.com/embed/muOxajPYlIs" target="videoScreenPlayer" id="link-139">
+                                <img src="/images/video-poster-dashboard/yeh-zinadagi-ussi-ki-hai.jpg" id="img-139"
+                                    class="img-music" alt="Dummy Text" />
+                                <h4 class="media-heading" id="head-139">Yeh Zindagi Ussi Ki Hai</h4>
                             </a>
                         </div>
+                        <!--
+					<div class="music-media-140 col-6 media-box">
+						<a href="" target="videoScreenPlayer" id="link-140" >
+						<img src="../images/dummy-image.png" class="img-music" id="img-140" alt="Dummy text" />
+						<h4 class="media-heading" id="head-140">Dummy Heading</h4>
+						</a>
+					</div>
+					<div class="music-media-141 col-6 media-box">
+						<a href="#" target="videoScreenPlayer" id="link-141">
+						<img src="../images/dummy-image.png" id="img-141" class="img-music" alt="Dummy text" />
+						<h4 class="media-heading" id="head-141">Dummy Heading</h4>
+						</a>
+					</div>
+					<div class="music-media-142 col-6 media-box">
+						<a href="#" target="videoScreenPlayer" id="link-142">
+						<img src="../images/dummy-image.png" id="img-142" class="img-music" alt="Dummy Text" />
+						<h4 class="media-heading" id="head-142">Dummy Heading</h4>
+						</a>
+					</div>
 
-                        <div class="music-media-140 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-140">
-                                <img src="/images/dummy-image.png" class="img-music" id="img-140" alt="Dummy text" />
-                                <h4 class="media-heading" id="head-140">Dummy Heading</h4>
-                            </a>
-                        </div>
-                        <div class="music-media-141 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-141">
-                                <img src="/images/dummy-image.png" id="img-141" class="img-music" alt="Dummy text" />
-                                <h4 class="media-heading" id="head-141">Dummy Heading</h4>
-                            </a>
-                        </div>
-                        <div class="music-media-142 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-142">
-                                <img src="/images/dummy-image.png" id="img-142" class="img-music" alt="Dummy Text" />
-                                <h4 class="media-heading" id="head-142">Dummy Heading</h4>
-                            </a>
-                        </div>
-
-                        <div class="music-media-143 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-143">
-                                <img src="/images/dummy-image.png" class="img-music" id="img-143" alt="Dummy text" />
-                                <h4 class="media-heading" id="head-143">Dummy Heading</h4>
-                            </a>
-                        </div>
-                        <div class="music-media-144 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-144">
-                                <img src="/images/dummy-image.png" id="img-144" class="img-music" alt="Dummy text" />
-                                <h4 class="media-heading" id="head-144">Dummy Heading</h4>
-                            </a>
-                        </div>
-                        <!----------------------Load More Videos Button add up here-----------
+					<div class="music-media-143 col-6 media-box">
+						<a href="#" target="videoScreenPlayer" id="link-143" >
+						<img src="../images/dummy-image.png" class="img-music" id="img-143" alt="Dummy text" />
+						<h4 class="media-heading" id="head-143">Dummy Heading</h4>
+						</a>
+					</div>
+					<div class="music-media-144 col-6 media-box">
+						<a href="#" target="videoScreenPlayer" id="link-144">
+						<img src="../images/dummy-image.png" id="img-144" class="img-music" alt="Dummy text" />
+						<h4 class="media-heading" id="head-144">Dummy Heading</h4>
+						</a>
+					</div>
+					<!----------------------Load More Videos Button add up here-----------
 					<button class="btn btn-danger col-12 my-5" id="loadMore" onclick="addMoreVideo()">Load More Videos</button>
 					----->
+                        <!--
+					<div class="music-media-145 col-6 media-box">
+						<a href="#" target="videoScreenPlayer" id="link-145">
+						<img src="../images/dummy-image.png" id="img-145" class="img-music" alt="Dummy Text" />
+						<h4 class="media-heading" id="head-145">Dummy Heading</h4>
+						</a>
+					</div>
 
-                        <div class="music-media-145 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-145">
-                                <img src="/images/dummy-image.png" id="img-145" class="img-music" alt="Dummy Text" />
-                                <h4 class="media-heading" id="head-145">Dummy Heading</h4>
-                            </a>
-                        </div>
-
-                        <div class="music-media-146 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-146">
-                                <img src="/images/dummy-image.png" class="img-music" id="img-146" alt="Dummy text" />
-                                <h4 class="media-heading" id="head-146">Dummy Heading</h4>
-                            </a>
-                        </div>
-                        <div class="music-media-147 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-147">
-                                <img src="/images/dummy-image.png" id="img-147" class="img-music" alt="Dummy text" />
-                                <h4 class="media-heading" id="head-147">Dummy Heading</h4>
-                            </a>
-                        </div>
-                        <div class="music-media-148 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-148">
-                                <img src="/images/dummy-image.png" id="img-148" class="img-music" alt="Dummy Text" />
-                                <h4 class="media-heading" id="head-148">Dummy Heading</h4>
-                            </a>
-                        </div>
-                        <div class="music-media-149 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-149">
-                                <img src="/images/dummy-image.png" id="img-149" class="img-music" alt="Dummy text" />
-                                <h4 class="media-heading" id="head-149">Dummy Heading</h4>
-                            </a>
-                        </div>
-                        <div class="music-media-150 col-6 media-box">
-                            <a href="#" target="videoScreenPlayer" id="link-150">
-                                <img src="/images/dummy-image.png" id="img-150" class="img-music" alt="Dummy Text" />
-                                <h4 class="media-heading" id="head-150">Dummy Heading</h4>
-                            </a>
-                        </div>
+					<div class="music-media-146 col-6 media-box">
+						<a href="#" target="videoScreenPlayer" id="link-146" >
+						<img src="../images/dummy-image.png" class="img-music" id="img-146" alt="Dummy text" />
+						<h4 class="media-heading" id="head-146">Dummy Heading</h4>
+						</a>
+					</div>
+					<div class="music-media-147 col-6 media-box">
+						<a href="#" target="videoScreenPlayer" id="link-147">
+						<img src="../images/dummy-image.png" id="img-147" class="img-music" alt="Dummy text" />
+						<h4 class="media-heading" id="head-147">Dummy Heading</h4>
+						</a>
+					</div>
+					<div class="music-media-148 col-6 media-box">
+						<a href="#" target="videoScreenPlayer" id="link-148">
+						<img src="../images/dummy-image.png" id="img-148" class="img-music" alt="Dummy Text" />
+						<h4 class="media-heading" id="head-148">Dummy Heading</h4>
+						</a>
+					</div>
+					<div class="music-media-149 col-6 media-box">
+						<a href="#" target="videoScreenPlayer" id="link-149">
+						<img src="../images/dummy-image.png" id="img-149" class="img-music" alt="Dummy text" />
+						<h4 class="media-heading" id="head-149">Dummy Heading</h4>
+						</a>
+					</div>
+					<div class="music-media-150 col-6 media-box">
+						<a href="#" target="videoScreenPlayer" id="link-150">
+						<img src="../images/dummy-image.png" id="img-150" class="img-music" alt="Dummy Text" />
+						<h4 class="media-heading" id="head-150">Dummy Heading</h4>
+						</a>
+					</div>
+				-->
                     </div>
                 </div>
             </div>
@@ -416,25 +462,33 @@
         And <a href="https://www.linkedin.com/in/pawan-saggu-06589b157/" class="text-white font-weight-bold mx-1"
             target="_blank" title="Pawan's Linkedin Profile">Pawan Saggu</a>
         <br />
-        &copy; 2019 Copyright BailaBollywood<img src="/images/Spanish-bolo-natraj-transparent.png"
+        &copy; 2019 Copyright BailaBollywood<img src="https://drive.google.com/uc?id=1xKggmfNIkigJXy6HKUDdFEwIy-uGVjiF"
             alt="Baila Bollywood Icon">
     </div>
 
-    <!--Bootstrap js files-->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <!--custom javascript files-->
-    <script src="/scripts/sticky-navbar.js"></script>
-    <script src="/scripts/show-comments.js"></script>
-
-
 </body>
+<script>
+    var load = document.getElementById('loader');
+    function myloader() {
+        load.style.display = "none";
+    }
+</script>
+
+<!--Bootstrap js files-->
+<script defer src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<!--custom javascript files-->
+<script>
+    var stateObj;
+    history.pushState(stateObj, "page without extension", "dashboard");
+</script>
+
 
 </html>
