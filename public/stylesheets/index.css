@@ -1,4 +1,8 @@
-
+@font-face {
+    font-family: Ananda Namaste Regular;
+    src: url("/stylesheets/Ananda Namaste Regular.ttf");
+  }
+  
 *
 {
     margin:0;
@@ -7,13 +11,13 @@
     scroll-behavior: smooth;
     font-family: 'Titillium Web', sans-serif ;
 }
+/*
 #loader
 {
     height:100vh;
     width:100%;
-    position:fixed;
-    overflow-y:hidden;
-    z-index: 999999;
+    overflow:hidden;
+    z-index: 9999999;
     animation:preloader 1s ease infinite alternate;
     transition: all 0.5s ease ;
 }
@@ -23,24 +27,20 @@
     0%
     {
         background:rgba(0, 29, 56, 1) url("../images/baila-bollywood-icon.png") no-repeat center;
-    background-size: 200px 200px;
-        transform: scale(1.2);
+        background-size:150px 150px;
+        transform: scale(1);
     }
     100%
     {
         background:rgba(0, 29, 56, 1) url("../images/baila-bollywood-icon-red.png") no-repeat center;
-        background-size: 200px 200px;
-        transform: scale(1);
+        background-size: 150px 150px;
+        transform: scale(1.2);
     }
 
 }
-
+*/
 /*Background image for section 1*/
-.hero-image-icon
-{
-    height:200px;
-    width:200px;
-}
+
 .hero-image
 {
     width:100%;
@@ -48,14 +48,14 @@
     background-image:linear-gradient(to right bottom,rgba(1,1,1,0.5),rgba(0, 29, 56, 1)),url("https://drive.google.com/uc?id=1UN3hx_OgJtgjDIUN3E_WfkdJY_P5bPQz");
     background-size:cover;
     border-radius: 0px;
+    font-family: Ananda Namaste Regular;
+    
+}
+.heading-section
+{
+    font-family: Ananda Namaste Regular
 }
 
-.welcome-heading,
-.website_name-heading
-{
-    font-size:7rem;
-    font-weight:100;
-}
 .display-1
 {
     font-weight:bolder;
@@ -229,7 +229,7 @@
   }
   .section-five
   {
-      background:url("../images/section-background.jpg");
+      background:url("https://drive.google.com/uc?id=1zjSPYS57_pXK_Oh0Tfslubdo_7wharl4");
   }
   
   /*other section*/
