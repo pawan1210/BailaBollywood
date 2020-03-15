@@ -192,7 +192,7 @@
   {
       position:absolute;
       z-index:2;
-      background-image:linear-gradient(to bottom,rgba(0, 29, 56, 0.6),#0009);
+      background-image:linear-gradient(to bottom,rgba(0, 29, 56, 0.8),#0009);
       width:100%;
       height: 100%;
       opacity:0;
