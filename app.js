@@ -14,6 +14,10 @@ const middleware = require('./middleware/index');
 const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
 const Promise = require('promise');
+const apiRoutes = require('./androidApi/index');
+
+
+app.use(apiRoutes);
 const port =  3000;
 
 
