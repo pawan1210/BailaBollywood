@@ -61,11 +61,11 @@ router.get("/andApi/", (req, res) => {
             if (user == null) {
                 console.log("User created");
                 newUser.save();
-                res.json({ google: true });
+                return res.json({ google: true });
             }
             else {
                 console.log("User present");
-                res.json({ google: false });
+                return res.json({ google: false });
             }
         });
     }
@@ -77,12 +77,15 @@ router.get("/andApi/", (req, res) => {
         User.findOne({ fbId: req.query.fbId }).then((user) => {
             if (user == null) {
                 newUser.save();
-                res.json({ facebook: true });
+                return res.json({ facebook: true });
             }
             else {
-                res.json({ facebook: false });
+                return res.json({ facebook: false });
             }
         })
+    }
+    else{
+        res.json({message:"Wrong api Call"});
     }
 
 });
