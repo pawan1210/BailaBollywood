@@ -27,11 +27,11 @@ router.get("/andApi/", (req, res) => {
         });
     }
     else if (req.query.type == 'signup') {
-        var newUser = {
+        var newUser = new User({
             username: req.query.username,
             password: req.query.password,
             email: req.query.email
-        }
+        });
         User.findOne({ username: req.query.username }).then((user) => {
             if (user == null) {
                 User.findOne({ email: req.query.email }).then((user) => {
@@ -53,24 +53,27 @@ router.get("/andApi/", (req, res) => {
         });
     }
     else if (req.query.type == 'google') {
-        var newUser = {
+
+        var newUser = new User({
             email: req.query.email
-        };
+        });
         User.findOne({ email: req.query.email }).then((user) => {
             if (user == null) {
+                console.log("User created");
                 newUser.save();
-               return res.json({ google: true });
+                res.json({ google: true });
             }
             else {
-                return res.json({ google: false });
+                console.log("User present");
+                res.json({ google: false });
             }
         });
     }
     else if (req.query.type == 'facebook') {
-        var newUser = {
+        var newUser = new User({
             username: req.query.username,
             fbId: req.query.fbId
-        };
+        });
         User.findOne({ fbId: req.query.fbId }).then((user) => {
             if (user == null) {
                 newUser.save();
