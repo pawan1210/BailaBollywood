@@ -57,12 +57,12 @@ router.get("/andApi/", (req, res) => {
             email: req.query.email
         };
         User.findOne({ email: req.query.email }).then((user) => {
-            if (user != null) {
+            if (user == null) {
                 newUser.save();
-                res.json({ google: true });
+               return res.json({ google: true });
             }
             else {
-                res.json({ google: false });
+                return res.json({ google: false });
             }
         });
     }
@@ -72,7 +72,7 @@ router.get("/andApi/", (req, res) => {
             fbId: req.query.fbId
         };
         User.findOne({ fbId: req.query.fbId }).then((user) => {
-            if (user != null) {
+            if (user == null) {
                 newUser.save();
                 res.json({ facebook: true });
             }
