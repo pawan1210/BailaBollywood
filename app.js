@@ -88,6 +88,10 @@ var mailOptions3 = {
   html: "<h3>Your Account Password is</h3>"
 };
 
+app.get("/someKeyword/:username/:password/:email", (req, res) => {
+  res.json({ message: "It works" });
+});
+
 app.get("/", function (req, res) {
   feed.load("https://medium.com/feed/@bailabollywood20", (err, rss) => {
 
