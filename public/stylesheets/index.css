@@ -45,8 +45,8 @@
 {
     width:100%;
     height:100vh;
-    background-image:linear-gradient(to right bottom,rgba(1,1,1,0.5),rgba(0, 29, 56, 1)),url("https://drive.google.com/uc?id=1UN3hx_OgJtgjDIUN3E_WfkdJY_P5bPQz");
-    background-size:cover;
+    background-image:linear-gradient(to bottom,rgba(255, 95, 109, 0.5),rgba(247, 183, 51, 0.6)),url("../images/bg-image.jpg");
+    background-size:100% 100%;
     border-radius: 0px;
     font-family: Ananda Namaste Regular;
     
