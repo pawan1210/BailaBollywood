@@ -6,7 +6,7 @@
 .navbar-expand-lg,
 navbar-light
 {
-  background:linear-gradient(to bottom,rgba(1,1,1,0.8) ,rgba(0, 29, 56, 1) );
+  background:#fff;
 
 }
  .navbar .navbar-collapse .navbar-nav .nav-item .nav-link
@@ -14,18 +14,19 @@ navbar-light
   margin-right:auto;
   margin-left:auto;
   font-weight: 100;
-  color:#fff;
+  color:rgba(247, 183, 51, 0.6);
 }
 .navbar-toggler
 {
   padding:10px;
-  border:1px solid grey ;
-  border-radius:10px;
+  border:none;
+  
  }
 .navbar-toggler-icon
 {
   height:30px;
   width:30px;
+
   content:url('../images/navbar-toggler-icon.png');
 }
 
@@ -48,19 +49,18 @@ navbar-light
 .login-btn,
 .register-btn
 {
-  color:#fff;
+  color:rgba(255, 95, 109, 1);
   font-weight:100;
   font-size:1.2rem;
-
-  border:1px solid #fff;
+  border:1px solid rgba(255, 95, 109, 0.5);
   
 }
 .login-btn:hover,
 .register-btn:hover
 {
-  background:#fff;
+  background:rgba(255, 95, 109, 1);
   font-weight:900;
-  color:rgba(0, 29, 56, 1);
+  color:#fff;
   border-color:#fff;
 }
 
@@ -78,5 +78,5 @@ navbar-light
   transform:scale(1.5);
   opacity:1 ;
   filter: blur(0);
-  border-bottom:1px solid #ffbf00;
+  border-bottom:1px solid rgba(255, 95, 109, 0.5);
 }
