@@ -64,22 +64,22 @@
     <div class="collapse navbar-collapse justify-content-center " id="navbarSupportedContent">
       <ul class="navbar-nav nav nav-pills ">
         <li class="nav-item m-xl-2 active">
-          <a class="nav-link text-center text-white " href="/">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link text-center font-weight-bold " href="/">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item m-xl-2">
-          <a class="nav-link text-center text-white " href="/#about">About Us</a>
+          <a class="nav-link text-center font-weight-bold " href="/#about">About Us</a>
         </li>
         <li class="nav-item m-xl-2">
-          <a class="nav-link text-center text-white " href="/#blogs">Our Blogs</a>
+          <a class="nav-link text-center font-weight-bold  " href="/#blogs">Our Blogs</a>
         </li>
         <li class="nav-item m-xl-2">
-          <a class="nav-link text-center text-white " href="/#pop-categ">Most Popular Categories</a>
+          <a class="nav-link text-center font-weight-bold  " href="/#pop-categ">Most Popular Categories</a>
         </li>
         <li class="nav-item m-xl-2">
-          <a class="nav-link text-center text-white " href="/#found-note">Founders's Note</a>
+          <a class="nav-link text-center font-weight-bold  " href="/#found-note">Founders's Note</a>
         </li>
         <li class="nav-item m-xl-2">
-          <a class="nav-link text-center text-white " data-toggle="modal" data-target="#exampleModalCenter">Contact
+          <a class="nav-link text-center font-weight-bold  " data-toggle="modal" data-target="#exampleModalCenter">Contact
             Us</a>
         </li>
 
@@ -102,12 +102,12 @@
 
   <div class="container">
     <% if(error && error.length>0) { %>
-    <div class="text-white bg-primary text-center font-weight-bold" role="alert">
+    <div class="text-white bg-danger text-center font-weight-bold" role="alert">
       <%=error%>
     </div>
     <% } %>
     <% if(success && success.length>0) { %>
-    <div class="text-white bg-primary text-center font-weight-bold" role="alert">
+    <div class="text-white bg-success text-center font-weight-bold" role="alert">
       <%=success%>
     </div>
     <% } %>
