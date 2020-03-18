@@ -490,8 +490,11 @@
 {
         .hero-image
         {
-                padding-top:5rem;
-        }
+            width:100%;
+            height:100vh;
+            background-image:linear-gradient(to bottom,rgba(255, 95, 109, 0.5),rgba(247, 183, 51, 0.6)),url("../images/bg-image-sm-device.jpg");
+            background-size:100% 100%;
+       }
         .hero-image h1,h2
          {
               font-size:4.5rem;
