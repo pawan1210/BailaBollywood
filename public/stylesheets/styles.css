@@ -55,7 +55,8 @@ a
 }
 
 .navbar, .navbar-expand-lg, navbar-light {
-    background: linear-gradient(to bottom,rgba(1,1,1,0.8) ,rgba(0, 29, 56, 1) );
+     background:#fff;
+  box-shadow:0px 1px 20px 0px rgba(46, 61, 73, 0.2);
 }
 
 .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
@@ -68,7 +69,7 @@ a
 .navbar-toggler-icon {
     height: 30px;
     width: 30px;
-    content: url('https://drive.google.com/uc?id=1y-SlBUG8R3jxAQrVI-fOXdOVANlz2P3O');
+    content: url('../images/navbar-toggler-icon.png');
 }
 
 .logo-navbar-left {
