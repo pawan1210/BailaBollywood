@@ -7,6 +7,8 @@
 navbar-light
 {
   background:#fff;
+  box-shadow:0px 1px 20px 0px rgba(46, 61, 73, 0.2);
+
 
 }
  .navbar .navbar-collapse .navbar-nav .nav-item .nav-link
