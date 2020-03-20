@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Ananda Namaste Regular;
+    src: url("../Ananda Namaste Regular.ttf");
+  }
 * {
     padding: 0;
     margin: 0;
@@ -6,13 +10,13 @@
     font-display: fallback;
     
 }
+/*
 #loader
 {
     height:100vh;
     width:100%;
-    position:fixed;
-    overflow-y:hidden;
-    z-index: 999999;
+    overflow:hidden;
+    z-index: 9999999;
     animation:preloader 1s ease infinite alternate;
     transition: all 0.5s ease ;
 }
@@ -21,18 +25,19 @@
 {
     0%
     {
-        background:rgba(0, 29, 56, 1) url("https://drive.google.com/uc?id=1oLS4dqzQazNT4_T8dKNgoiIe74hDBocS") no-repeat center;
-    background-size: 200px 200px;
-        transform: scale(1.2);
+        background:rgba(0, 29, 56, 1) url("../images/baila-bollywood-icon.png") no-repeat center;
+        background-size:150px 150px;
+        transform: scale(1);
     }
     100%
     {
-        background:rgba(0, 29, 56, 1) url("https://drive.google.com/uc?id=1lxO7wVSujMnPVJ-FEbW8oGFVIBrWGLaC") no-repeat center;
-        background-size: 200px 200px;
-        transform: scale(1);
+        background:rgba(0, 29, 56, 1) url("../images/baila-bollywood-icon-red.png") no-repeat center;
+        background-size: 150px 150px;
+        transform: scale(1.2);
     }
 
 }
+*/
 a
 {
     color:rgba(0, 29, 56, 1) !important;
@@ -55,8 +60,9 @@ a
 }
 
 .navbar, .navbar-expand-lg, navbar-light {
-     background:#fff;
+    background:#fff;
   box-shadow:0px 1px 20px 0px rgba(46, 61, 73, 0.2);
+
 }
 
 .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
@@ -76,11 +82,13 @@ a
     width: 80px;
     height: 80px;
 }
-.logo-navbar-middle
+.dropdown-toggle
 {
-    height:100px;
-    width:100px;
-    transform:scale(2);
+    color:rgba(247, 183, 51, 0.6);
+}
+.dropdown-item
+{
+    color:rgba(255, 95, 109, 1) !important;
 }
 
 .navbar-nav {
@@ -168,7 +176,7 @@ a
 {
     margin-top:10px;
     font-size:1.2rem;
-    text-align: center;
+    text-align: left;
     color: #fff;
 }
 
@@ -188,20 +196,32 @@ counter-increment: numberPrefix;
 }
 
 /* Footer */
+/***********
+    Privacy Policy Modal Box
+    **********/
+    .privacy-statement
+{
+    height:500px;
+    overflow-y: scroll;
+    padding:30px;
+    text-align:justify;
+}
 .footer-section
 {
     width:100%;
     min-height:50px;
-    background:rgba(0, 29, 56, 1);
-    color:white;
+    background:linear-gradient(to right ,rgba(255, 95, 109, 1),rgba(247, 183, 51, 1));
+    color:#fff;
     text-align:center;
     padding:10px;
+    font-weight: lighter;
 }
 .footer-section img
 {
     height:30px;
     width:30px;
 }
+
 /*Scroll bar*/
 .hide-scrollbar {
     -webkit-scrollbar-width: thin;
