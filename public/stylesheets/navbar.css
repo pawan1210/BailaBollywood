@@ -9,14 +9,13 @@ navbar-light
   background:#fff;
   box-shadow:0px 1px 20px 0px rgba(46, 61, 73, 0.2);
 
-
 }
  .navbar .navbar-collapse .navbar-nav .nav-item .nav-link
 {
   margin-right:auto;
   margin-left:auto;
   font-weight: 100;
-  color:rgba(247, 183, 51, 0.6);
+  color:rgba(247, 183, 51, 1);
 }
 .navbar-toggler
 {
