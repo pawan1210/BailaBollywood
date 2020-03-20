@@ -5,14 +5,16 @@
 
 @media  (min-width: 1200px)
  {
-          .hero-image h1,h2
+        
+          .hero-image h1
          {
-              font-size:8rem;
+              font-size:10rem;
+              margin-top:0px;
              
          }
          .hero-image p
          {
-                 font-size:3rem;
+                 font-size:4rem;
                  font-weight:900;
          }
 
@@ -54,10 +56,10 @@
 
 @media (min-width: 992px) and (max-width: 1199.98px) 
 {
-         .hero-image h1,h2
+        .hero-image h1
          {
-              font-size:7rem;
-              font-weight:900;   
+              font-size:9rem;
+             
          }
          .hero-image p
          {
@@ -119,14 +121,15 @@
 
  @media (max-width:1078px)
  {
-         .hero-image h1,h2
+          .hero-image h1
          {
-              font-size:6rem;
-                
+              font-size:8rem;
+              margin-top:50px;
+             
          }
          .hero-image p
          {
-                 font-size:3rem;
+                 font-size:4rem;
                  font-weight:900;
          }
 
@@ -190,6 +193,12 @@
 
 @media (min-width: 768px) and (max-width: 991.98px) 
 {
+         .hero-image h1
+         {
+              font-size:8rem;
+              margin-top:20px;
+             
+         }
         
         .log-reg-btn
         {
@@ -260,6 +269,15 @@
                display:none; 
         }
 
+        /*************
+        footer right images
+         **************/
+         .footer-right-img
+        {
+            
+            margin-top:0rem;
+        }
+
 
   }
 
@@ -272,10 +290,11 @@
         {
                 padding-top:5rem;
         }
-        .hero-image h1,h2
+         .hero-image h1
          {
-              font-size:4.9rem;
-           
+              font-size:6rem;
+              margin-top:20px;
+             
          }
          .hero-image strong p
          {
@@ -349,6 +368,20 @@
         {
                display:none; 
         }
+        /*************
+        footer right images and footer left and center box (index.html/landing.ejs)
+         **************/
+         .footer-left,
+         .footer-center
+         {
+                 height:400px;
+         }
+         .footer-right-img
+        {
+            
+            margin-top:0rem;
+        }
+
        
 
   }
@@ -360,12 +393,13 @@
  {
         .hero-image
         {
-                padding-top:8rem;
+                padding-top:7rem;
         }
-         .hero-image h1,h2
+         .hero-image h1
          {
-              font-size:4.5rem;
-                 
+              font-size:5.7rem;
+              margin-top:10px;
+             
          }
          .hero-image p
          {
@@ -438,10 +472,7 @@
         {
             height:300px;    
         }
-        .img-dance-indian
-        {
-               
-        }
+       
         .pg-con-music-playlist 
         {
             margin-top:5rem;
@@ -483,22 +514,46 @@
         {
                display:none; 
         }
+        /*************
+        footer right images (index.html/landing.ejs)
+         **************/
+         .footer-right-img
+        {
+            
+            margin-top:0rem;
+        }
        
+  }
+  
+  @media (max-width:500px)
+  {
+          .hero-image
+          {
+           height:100vh;
+            background-image:linear-gradient(to bottom,rgba(255, 95, 109, 0.5),rgba(247, 183, 51, 0.6)),url("../images/bg-image-sm-device.jpg");
+            background-size:100% 100%;  
+          }
+           .hero-image h1
+         {
+              font-size:5rem;
+              margin-top:10px;
+             
+         }
+         
   }
 
 @media (max-width:435px)
 {
         .hero-image
         {
-            width:100%;
-            height:100vh;
-            background-image:linear-gradient(to bottom,rgba(255, 95, 109, 0.5),rgba(247, 183, 51, 0.6)),url("../images/bg-image-sm-device.jpg");
-            background-size:100% 100%;
-       }
-        .hero-image h1,h2
+            padding-top:10rem;
+           
+        }
+         .hero-image h1
          {
               font-size:4.5rem;
-                 
+              margin-top:10px;
+                
          }
          .hero-image strong p
          {
@@ -557,19 +612,41 @@
                display:block;
                height:200px; 
         }
+        /*************
+        footer right images (index.html/landing.ejs)
+         **************/
+         .footer-right-img
+        {
+            
+            margin-top:0rem;
+        }
          
+}
+@media (max-width:400px)
+{
+
+        .hero-image
+        {
+                padding-left:0rem;
+        }
+        .hero-image h1
+         {
+              font-size:3.9rem;
+              margin-top:10px;
+                
+         }
 }
 
 @media (max-width:340px)
 {
         .hero-image
         {
-                padding-top:5rem;
+                padding-top:10rem;
         }
          .hero-image h1,h2
          {
               font-size:3.8rem;
-             
+
          }
    .log-reg-btn
         {
@@ -620,7 +697,27 @@
                width:200px;
                margin:0 auto;
         }
+        /*************
+        footer right images (index.html/landing.ejs)
+         **************/
+         .footer-right-img
+        {
+            
+            margin-top:0rem;
+        }
     
+}
+@media (max-width:320px)
+{
+         .hero-image
+        {
+                padding-top:10rem;
+        }
+         .hero-image h1,h2
+         {
+              font-size:3.5rem;
+
+         }
 }
 
 @media only screen and (max-width:285px)
