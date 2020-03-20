@@ -41,12 +41,6 @@
   <!---------------Css file for responsiveness------------------>
   <link rel="stylesheet" type="text/css" href="/stylesheets/responsive-breakpoints.css" />
 
-
-
-
-
-
-
 </head>
 
 <body>
@@ -62,39 +56,40 @@
     </button>
 
     <div class="collapse navbar-collapse justify-content-center " id="navbarSupportedContent">
-      <ul class="navbar-nav nav nav-pills ">
-        <li class="nav-item m-xl-2 active">
-          <a class="nav-link text-center font-weight-bold " href="/">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item m-xl-2">
-          <a class="nav-link text-center font-weight-bold " href="/#about">About Us</a>
-        </li>
-        <li class="nav-item m-xl-2">
-          <a class="nav-link text-center font-weight-bold  " href="/#blogs">Our Blogs</a>
-        </li>
-        <li class="nav-item m-xl-2">
-          <a class="nav-link text-center font-weight-bold  " href="/#pop-categ">Most Popular Categories</a>
-        </li>
-        <li class="nav-item m-xl-2">
-          <a class="nav-link text-center font-weight-bold  " href="/#found-note">Founders's Note</a>
-        </li>
-        <li class="nav-item m-xl-2">
-          <a class="nav-link text-center font-weight-bold  " data-toggle="modal" data-target="#exampleModalCenter">Contact
-            Us</a>
-        </li>
-
-      </ul>
+          <ul class="navbar-nav nav nav-pills ">
+            <li class="nav-item m-xl-2 active">
+              <a class="nav-link text-center font-weight-bold " href="/">Inicio </a>
+            </li>
+            <li class="nav-item m-xl-2">
+              <a class="nav-link text-center font-weight-bold " href="/#about">
+                Quiénes Somos
+                </a>
+            </li>
+            <li class="nav-item m-xl-2">
+              <a class="nav-link text-center font-weight-bold " href="/#blogs">Nuestro Blog</a>
+            </li>
+            <li class="nav-item m-xl-2">
+              <a class="nav-link text-center font-weight-bold " href="/#pop-categ">Lo más Popular</a>
+            </li>
+            <li class="nav-item m-xl-2">
+              <a class="nav-link text-center font-weight-bold " href="/#found-note">Nuestro Fundador </a>
+            </li>
+            <li class="nav-item m-xl-2">
+              <a class="nav-link text-center font-weight-bold" data-toggle="modal" data-target="#exampleModalCenter" >Contacto</a>
+            </li>
+            
+          </ul>
       <form class="form-inline  log-reg-btn ml-xl-5 ml-lg-5  justify-content-center">
         <% if(!currentUser) {%>
         <a class="btn  mr-xl-3 mr-lg-3 mr-md-3 mr-sm-3 mr-3 login-btn " href="/login" target="_top"><i
-            class="fas fa-sign-in-alt"></i> Login</a>
+            class="fa fa-sign-in"></i> Iniciar Sesión </a>
         <a class="btn ml-xl-3 ml-lg-3 ml-md-3 ml-sm-3  register-btn " href="/register" target="_top"><i
-            class="fa fa-user-plus"></i> Register</a>
+            class="fa fa-user-plus"></i> Regístrate</a>
         <% }else{ %>
         <a class="btn  mr-xl-3 mr-lg-3 mr-md-3 mr-sm-3 mr-3 login-btn " href="/logout" target="_top"><i
-            class="fas fa-sign-in-alt"></i> Logout</a>
-        <a class="btn  mr-xl-3 mr-lg-3 mr-md-3 mr-sm-3 mr-3 login-btn " href="/dashboard" target="_top"><i
-            class="fa fa-heart"></i> My Dashboard</a>
+            class="fa fa-sign-in"></i> Cerrar Sesión</a>
+        <a class="btn  mr-xl-3 mr-lg-3 mr-md-3 mr-sm-3 mr-3 register-btn " href="/dashboard" target="_top"><i
+            class="fa fa-heart"></i> My Tablero</a>
         <% } %>
       </form>
     </div>
@@ -248,7 +243,43 @@
       </div>
     </div>
   </div>
+  <!-----------------------------------------------
+                                Privacy Policy Modal Form
+                                              ----------------------------------->
+                                              
+ <div class="modal fade" id="privacyPolicyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header ">
+        <h5 class="font-weight-bold ml-auto mr-auto" id="exampleModalLongTitle"><i class="fa fa-user mr-3" style="color:#f5af19;"></i>Declaración de privacidad Baila Bollywood
+        </h5>
+        <button type="button" class="close ml-0" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body privacy-statement">
+        <h3 class="font-weight-bold text-left">1. Baila Bollywood Política de Privacidad 
+        </h3>
+        <p>La Política de Privacidad de Baila Bollywood se enfoca en respetar y ponderar la privacidad del usuario con respecto a cualquier información que podamos recopilar mientras operamos nuestro sitio web. Esta Política de Privacidad se aplica a https://bailabollywood.com. Respetamos su privacidad y nos comprometemos a proteger la información de identificación personal que usted pueda llegar a proporcionar a través de nuestro sitio web. Hemos adoptado estas medidas de seguridad para dar a conocer de forma certera, qué informaciones se pueden recopilar en nuestro sitio web, cómo se usan y en qué circunstancias podemos divulgarlas a terceros. Esta Política de Privacidad se aplica sólo a la información recopilada a través del sitio web, más no a la recopilación de información por otros medios o diversas fuentes.
+          Esta Política de Privacidad publicada en nuestro sitio web, establece las reglas y políticas generales que rigen el uso de nuestro sitio web. Dependiendo de sus actividades y el uso que le dé a nuestro sitio web, es posible que deba aceptar términos y condiciones adicionales.
+          </p>
+          <hr class="bg-dark  w-50 mx-auto my-5"/>
+          <h3 class="font-weight-bold">2. Visitantes</h3>
+          <p>Al igual que la mayoría de los operadores de sitios web, Baila Bollywood recopila información de identificación no personal del tipo que los servidores suelen poner a disposición, como el tipo de navegador, la preferencia de idioma, el sitio de referencia y la fecha y hora de cada solicitud de visitante. El propósito de Baila Bollywood conforme a recopilar información de identificación no personal es comprender mejor cómo los visitantes de Baila Bollywood usan el sitio web. De vez en cuando, Baila Bollywood puede divulgar información que no sea de identificación personal en conjunto, por ejemplo, mediante la publicación de un informe sobre las tendencias en el uso de su sitio web.
+          </p>
+          <hr class="bg-dark w-50 mx-auto my-5"/>
+          <h3 class="font-weight-bold">3.Cambios en la Política de Privacidad
+          </h3>
+          <p>Aunque es probable que la mayoría de los cambios sean menores, Baila Bollywood advierte que es posible que pueda cambiar su Política de Privacidad de vez en cuando, y según el criterio exclusivo del sitio web: https://bailabollywood.com. El equipo de Baila Bollywood, recomienda a los visitantes a consultar con frecuencia esta página en caso de cualquier cambio en su Política de Privacidad. El uso continuado de este sitio después de cualquier cambio en su Política de Privacidad constituirá su aceptación y acato. 
+          </p>
+       </div>
+      
+    </div>
+  </div>
+</div>
   <p class="footer-section m-0">
+    <!---------------------------Privacy policy statement opens after clicking here-------------------->
+    <i style="color:#fff"class="fas mr-3 fa-flag-checkered"></i><a href="#privacyPolicyModal" class="text-white text-center d-block mb-1"  data-toggle="modal" data-target="#privacyPolicyModal">Política de Privacidad</a>
     Website Made With &hearts; By <a href=" https://www.linkedin.com/in/vaibhav-kaul-ab5941182/"
       class="text-white mx-1 font-weight-bold" target="_blank" title="Vaibhav's Linkedin Profile">Vaibhav Kaul</a>
     And <a href="https://www.linkedin.com/in/pawan-saggu-06589b157/" class="text-white font-weight-bold mx-1"
@@ -257,15 +288,11 @@
     &copy; 2019 Copyright BailaBollywood<img src="/images/Spanish-bolo-natraj-transparent.png">
   </p>
 </body>
-<script>
-  var load = document.getElementById('loader');
-  function myloader() {
-    load.style.display = "none";
-  }
-</script>
 
-<!--------------------------------------local Javascrpt files--------------------------------------------------------->
+
+<!--------------------------------------local Javascrpt files--------------
 <script src="/scripts/sticky-navbar.js"></script>
+------------------------------------------->
 
 
 <!-------------------------bootstrap javascript----------------------------->
