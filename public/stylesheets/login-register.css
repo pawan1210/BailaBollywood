@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Ananda Namaste Regular;
+    src: url("../Ananda Namaste Regular.ttf");
+  }
 *
 {
     padding:0;
@@ -6,13 +10,13 @@
     font-family: 'Titillium Web', sans-serif ;
     font-display: fallback;
 }
+/*
 #loader
 {
     height:100vh;
     width:100%;
-    position:fixed;
-    overflow-y:hidden;
-    z-index: 999999;
+    overflow:hidden;
+    z-index: 9999999;
     animation:preloader 1s ease infinite alternate;
     transition: all 0.5s ease ;
 }
@@ -22,17 +26,18 @@
     0%
     {
         background:rgba(0, 29, 56, 1) url("../images/baila-bollywood-icon.png") no-repeat center;
-    background-size: 200px 200px;
-        transform: scale(1.2);
+        background-size:150px 150px;
+        transform: scale(1);
     }
     100%
     {
         background:rgba(0, 29, 56, 1) url("../images/baila-bollywood-icon-red.png") no-repeat center;
-        background-size: 200px 200px;
-        transform: scale(1);
+        background-size: 150px 150px;
+        transform: scale(1.2);
     }
 
 }
+*/
 body
 {
     background:url("../images/section-background.jpg");
@@ -69,6 +74,22 @@ body
     font-size:2.1em;
     font-weight:900;
 }
+.btn-close
+{
+  background:#fff;
+  color:rgba(255, 95, 109, 1);
+  border:1px solid rgba(255, 95, 109, 0.8);
+  box-shadow:0px 1px 20px 0px rgba(46, 61, 73, 0.2);
+  font-weight:bolder;
+}
+.btn-save
+{
+  background:#fff;
+  color:rgba(247, 183, 51, 1);
+  border:1px solid rgba(247, 183, 51, 0.8);
+  box-shadow:0px 1px 20px 0px rgba(46, 61, 73, 0.2);
+  font-weight:bolder;
+}
 /*Register and Login form Labels*/
 .name-label,
 .email-label,
@@ -76,6 +97,7 @@ body
 .pass-label,
 .phone-label
 {
+    
     position:relative;
     top:30px;
     left:20px;
@@ -90,7 +112,7 @@ body
     margin:0;
     border-radius:0px 20px 20px 0px;
     background:white;
-    background-image: url('https://drive.google.com/uc?id=1CezFgvGvyz4uhuXOJd1ijzYHPDzOror6');
+    background-image: url('../images/spanish-man.png');
     background-size:100% 100%;
    
 }
@@ -102,24 +124,14 @@ body
     margin:0;
     background:#fff;
     border-radius:20px 0px 0px 20px;
-     background-image: url('https://drive.google.com/uc?id=1CezFgvGvyz4uhuXOJd1ijzYHPDzOror6');
+     background-image: url('../images/spanish-man.png');
      background-size:100% 100%;
 }
-.btn-close
-{
-    background:#b92b27;
-    color:#fff;
-    font-weight:900;
-}
-.btn-save
-{
-    background:#3b5999;
-    color:#fff;
-    font-weight:900;
-}
+
 /*Login and registeraton form*/
 .form-control
 {
+    background-color: #fff;;
     height:60px;
     border:1px solid #373B44;
 }
@@ -142,13 +154,13 @@ body
      font-weight:bolder;
     letter-spacing:2px;
     color:#fff;
-    background:rgba(0, 29, 56, 1);
+    background:rgba(255, 95, 109, 1);
 }
 .btn-register:hover
 {
-    color:rgba(0, 29, 56, 1);
+    color:rgba(255, 95, 109, 1);
     background:#fff;
-    border:1px solid rgba(0, 29, 56, 1);
+    border:1px solid rgba(255, 95, 109, 1);
 }
 /*Login page login button*/
 .btn-login
@@ -156,9 +168,9 @@ body
     font-size:1.5rem;
     letter-spacing:2px;
     height:70px;
-    color:rgba(0, 29, 56, 1);
+    color:rgba(247, 183, 51, 1);
     background:#fff;
-    border:1px solid rgba(0, 29, 56, 1);
+    border:1px solid rgba(247, 183, 51, 1);
     line-height:55px;
      width:100%;
      font-weight:bolder;
@@ -166,13 +178,14 @@ body
 .btn-login:hover
 {
     color:#fff;
-    background:rgba(0, 29, 56, 1);
+    background:rgba(247, 183, 51, 1);
 }
 .login-menu-spanish-man
 {
     height:100px;
     width:100px;
 }
+
 /*Seperator line */
 .or-seperator
 {
@@ -277,14 +290,25 @@ body
   }
 
 /* Footer */
+/***********
+    Privacy Policy Modal Box
+    **********/
+    .privacy-statement
+{
+    height:500px;
+    overflow-y: scroll;
+    padding:30px;
+    text-align:justify;
+}
 .footer-section
 {
     width:100%;
     min-height:50px;
-    background:rgba(0, 29, 56, 1);
-    color:white;
+    background:linear-gradient(to right ,rgba(255, 95, 109, 1),rgba(247, 183, 51, 1));
+    color:#fff;
     text-align:center;
     padding:10px;
+    font-weight: lighter;
 }
 .footer-section img
 {
