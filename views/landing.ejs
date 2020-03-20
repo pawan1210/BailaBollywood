@@ -36,11 +36,12 @@
 
   <!------------------Social Media Icons------------------------>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="apple-touch-icon" href="/images/baila-bollywood-icon.png" />
-  <meta name="apple-mobile-web-app-status-bar" content="#373B44" />
-  <!--Web app manfest file for android devices-->
+   <!--Web app manfest file for android devices
   <link rel="manifest" href="manifest.json" />
   <meta name="theme-color" content="#373B44" />
+  <link rel="apple-touch-icon" href="/images/baila-bollywood-icon.png" />
+  <meta name="apple-mobile-web-app-status-bar" content="#373B44" />
+  -->
 
 </head>
 
@@ -57,40 +58,41 @@
       <span class=" navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse justify-content-center " id="navbarSupportedContent">
-      <ul class="navbar-nav nav nav-pills ">
-        <li class="nav-item m-xl-2 active">
-          <a class="nav-link text-center font-weight-bold " href="/">Home </a>
-        </li>
-        <li class="nav-item m-xl-2">
-          <a class="nav-link text-center font-weight-bold" href="#about">About Us</a>
-        </li>
-        <li class="nav-item m-xl-2">
-          <a class="nav-link text-center font-weight-bold " href="#blogs">Our Blogs</a>
-        </li>
-        <li class="nav-item m-xl-2">
-          <a class="nav-link text-center font-weight-bold" href="#pop-categ">Most Popular Categories</a>
-        </li>
-        <li class="nav-item m-xl-2">
-          <a class="nav-link text-center font-weight-bold " href="#found-note">Founders's Note</a>
-        </li>
-        <li class="nav-item m-xl-2">
-          <a class="nav-link text-center font-weight-bold" data-toggle="modal" data-target="#exampleModalCenter">Contact
-            Us</a>
-        </li>
-
-      </ul>
+   <div class="collapse navbar-collapse justify-content-center " id="navbarSupportedContent">
+          <ul class="navbar-nav nav nav-pills ">
+            <li class="nav-item m-xl-2 active">
+              <a class="nav-link text-center font-weight-bold " href="index.html">Inicio </a>
+            </li>
+            <li class="nav-item m-xl-2">
+              <a class="nav-link text-center font-weight-bold " href="#about">
+                Quiénes Somos
+                </a>
+            </li>
+            <li class="nav-item m-xl-2">
+              <a class="nav-link text-center font-weight-bold " href="#blogs">Nuestro Blog</a>
+            </li>
+            <li class="nav-item m-xl-2">
+              <a class="nav-link text-center font-weight-bold " href="#pop-categ">Lo más Popular</a>
+            </li>
+            <li class="nav-item m-xl-2">
+              <a class="nav-link text-center font-weight-bold " href="#found-note">Nuestro Fundador </a>
+            </li>
+            <li class="nav-item m-xl-2">
+              <a class="nav-link text-center font-weight-bold" data-toggle="modal" data-target="#exampleModalCenter" >Contacto</a>
+            </li>
+            
+          </ul>
       <form class="form-inline  log-reg-btn ml-xl-5 ml-lg-5  justify-content-center">
         <% if(!currentUser) {%>
         <a class="btn  mr-xl-3 mr-lg-3 mr-md-3 mr-sm-3 mr-3 login-btn " href="/login" target="_top"><i
-            class="fa fa-sign-in"></i> Login</a>
+            class="fa fa-sign-in"></i> Iniciar Sesión </a>
         <a class="btn ml-xl-3 ml-lg-3 ml-md-3 ml-sm-3  register-btn " href="/register" target="_top"><i
-            class="fa fa-user-plus"></i> Register</a>
+            class="fa fa-user-plus"></i> Regístrate</a>
         <% }else{ %>
         <a class="btn  mr-xl-3 mr-lg-3 mr-md-3 mr-sm-3 mr-3 login-btn " href="/logout" target="_top"><i
-            class="fa fa-sign-in"></i> Logout</a>
-        <a class="btn  mr-xl-3 mr-lg-3 mr-md-3 mr-sm-3 mr-3 login-btn " href="/dashboard" target="_top"><i
-            class="fa fa-heart"></i> My Dashboard</a>
+            class="fa fa-sign-in"></i> Cerrar Sesión</a>
+        <a class="btn  mr-xl-3 mr-lg-3 mr-md-3 mr-sm-3 mr-3 register-btn " href="/dashboard" target="_top"><i
+            class="fa fa-heart"></i> My Tablero</a>
         <% } %>
       </form>
     </div>
@@ -108,27 +110,26 @@
     </div>
     <% } %>
   </div>
-  <div class=" container-header ">
-    <div class="jumbotron hero-image  text-center mb-0">
-      <h1 class=" text-center mt-sm-5 heading-section text-dark">Welcome</h1>
-      <strong>
-        <p class="text-center heading-section  text-dark">To</p>
-      </strong>
-      <h2 class=" text-center text-dark heading-section notranslate">Baila Bollywood</h2>
-    </div>
-  </div>
+   <div class=" container-header ">
+            <div class="jumbotron hero-image  text-center mb-0" id="bg-image-text">
+              <h1 class=" text-center   heading-section text-dark">Bienvenidos  
+              </h1>
+              <strong><p class="text-center heading-section text-dark">a</p>
+              </strong>
+              <h1 class=" text-center  text-dark heading-section notranslate">Baila Bollywood</h1>
+            </div>
+          </div>
 
 
 
 
   <!---------------------------------------------------------- Modal Box----------------------------------------------- -->
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-    aria-hidden="true">
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header ">
-          <h5 class="modal-title ml-auto mr-auto" id="exampleModalLongTitle"><i class="fa fa-id-card mr-3"
-              style="color:#f5af19;"></i>Contact Us</h5>
+          <h5 class="modal-title ml-auto mr-auto" id="exampleModalLongTitle"><i class="fa fa-id-card mr-3" style="color:#f5af19;"></i>Contacto
+          </h5>
           <button type="button" class="close ml-0" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -136,29 +137,24 @@
         <div class="modal-body">
 
           <form class="contact-us" id="contact-form" action="/contact-us" method="POST">
-            <div class="form-group ">
-              <label for="txtname" class="bg-white name-label"> <i style="color:#00F260 ;"
-                  class="fa fa-user ml-1 mr-2"></i>Email</label>
-              <input type="email" required class="form-control" id="txtname" name="email"
-                placeholder="Enter Your Email-Id">
-            </div>
-            <div class="form-group ">
-              <label for="txtsubject" class="bg-white subject-label"><i style="color:#ec2F4B;"
-                  class="fa fa-book mr-1"></i> Subject</label>
-              <input type="text" name="subject" required class="form-control" id="txtsubject"
-                placeholder="Enter the Subject">
-            </div>
-            <div class="form-group">
-              <label for="message" class="bg-white email-label"> <i style="color:#667db6 ;"
-                  class="fa fa-comments  ml-1 mr-2"></i>Message</label>
-              <textarea style="height:200px;" name="text" class="form-control" id="message"
-                placeholder="Type Your Query Here"></textarea>
-            </div>
+             <div class="form-group ">
+            <label for="txtname"  class="bg-white name-label"> <i style="color:#00F260 ;" class="fa fa-user ml-1 mr-2"></i>Correo Electrónico 
+            </label>
+            <input type="email"  required class="form-control" id="txtname" name="mail" placeholder="Enter Your Name">
+          </div>
+          <div class="form-group ">
+            <label for="txtsubject"  class="bg-white subject-label"><i style="color:#ec2F4B;" class="fa fa-book mr-1"></i> Asunto</label>
+            <input type="text" name="subject"  required class="form-control" id="txtsubject" placeholder="Enter the Subject">
+          </div>
+          <div class="form-group">
+            <label for="message" class="bg-white email-label"> <i style="color:#667db6 ;" class="fa fa-comments  ml-1 mr-2"></i>Mensaje</label>
+          <textarea style="height:200px;" class="form-control"   id="message" placeholder="Type Your Query Here"></textarea>
+        </div>
 
-            <div class="modal-footer">
-              <button type="button" class="btn btn-close" data-dismiss="modal">Close</button>
-              <button class="btn btn-save">Submit</button>
-            </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-close" data-dismiss="modal">Cerrar</button>
+          <input type="submit" class="btn btn-save" value="Guardar Cambios " />
+        </div>
           </form>
 
         </div>
@@ -174,7 +170,8 @@
   <section class="baila-section section-one">
     <div class="container section_one-background">
       <div class="jumbotron indian-classical-jumbotron text-center p-0">
-        <h2 class="display-3 heading-section" >Classical Indian Dance and Music</h2>
+        <h2 class="display-3 heading-section">Danza y Música Clásica de la India 
+              </h2>
         <div class="line mb-3"></div>
         <img src="/images/dance-indian.jpg" class="traditional-dance-img ml-auto mr-auto mb-3" />
         <div class="indian_dance-music-history indian-dance-music-spanish notranslate">
@@ -268,8 +265,8 @@
     <div class="row container mt-5 row-image ml-auto mr-auto ">
       <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6   mb-3">
 
-        <a href="/images/painting-1.jpg" target="_blank">
-          <img class="image-gallery  " src="/images/painting-1.jpg">
+        <a href="/images/lady-playing-sitar.jpg" target="_blank">
+          <img class="image-gallery  " src="/images/lady-playing-sitar.jpg">
         </a>
 
       </div>
@@ -356,7 +353,8 @@
   <!--Baila bollywood blogs section-->
   <%if(blogs){%>
   <div class="section-five review-slider">
-    <h1 class="section-heading text-white mx-5 mt-5 ml-5 mb-5 display-3 text-center heading-section">Our Blogs</h1>
+    <h1 class="section-heading text-white heading-section mx-5 mt-5 ml-5 mb-5 display-3 text-center">Nuestro Blog
+  </h1>
     <div class="swiper-container container swiper-reviews">
       <div class="swiper-wrapper ">
         <%blogs.items.forEach(function(blog){%>
@@ -364,7 +362,7 @@
           <div class="overlay-blog"></div>
           <img class="review-image" src=<%=blog.imgUrl%>>
 
-          <a href=<%=blog.link%> style=" text-decoration:none; color:white; font-size:2rem;" class="blog-name mb-5"
+          <a href=<%=blog.link%> style=" text-decoration:none; color:white; font-size: 1.5rem;" class="blog-name mb-5"
             target="_blank"><%=blog.title%></a>
           <p class="blog-date mt-5"><%=blog.pubDate%></p>
         </div>
@@ -395,9 +393,11 @@
 
     <section class="baila-section section-four" id="pop-categ">
       </a>
-      <h2 class="display-2 popular-artist-heading text-center heading-section">Discover</h2>
+      <h2 class="display-2 popular-artist-heading heading-section text-center">Descubrir
+      </h2>
       <div class="line mt-4 mb-4"></div>
-      <h3 class="display-3 text-center heading-section">Most Popular Artists</h3>
+       <h3 class="display-3 text-center heading-section">Artistas más populares
+      </h3>
 
       <div class="container mt-5">
 
@@ -512,7 +512,7 @@
               Spanish we also take care of quality translation and interpretation service across India. </p>
           </div>
           <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 footer-center">
-            <h4 class="mt-5 display-5">Connect With Us:</h4>
+            <h4 class="mt-5  display-5">Conecta con Nosotros :</h4>
             <br>
             <div class="social-icons row justify-content-center">
               <a href="https://www.facebook.com/Baila-Bollywood-105697461007966/"
@@ -529,13 +529,48 @@
             </div>
           </div>
           <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 footer-right">
-            <img src="/images/logo_white.png" class="footer-right-img ">
+            <img src="/images/baila-bollywood-transparent-white.png" class="footer-right-img ">
           </div>
         </div>
       </div>
 
     </section>
+    <!-----------------------------------------------
+                                Privacy Policy Modal Form
+                                              ----------------------------------->
+                                              
+ <div class="modal fade" id="privacyPolicyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header ">
+        <h5 class="modal-title ml-auto mr-auto" id="exampleModalLongTitle"><i class="fa fa-user mr-3" style="color:#f5af19;"></i>Declaración de privacidad Baila Bollywood
+        </h5>
+        <button type="button" class="close ml-0" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body privacy-statement">
+        <h3 class="font-weight-bold text-left">1. Baila Bollywood Política de Privacidad 
+        </h3>
+        <p>La Política de Privacidad de Baila Bollywood se enfoca en respetar y ponderar la privacidad del usuario con respecto a cualquier información que podamos recopilar mientras operamos nuestro sitio web. Esta Política de Privacidad se aplica a https://bailabollywood.com. Respetamos su privacidad y nos comprometemos a proteger la información de identificación personal que usted pueda llegar a proporcionar a través de nuestro sitio web. Hemos adoptado estas medidas de seguridad para dar a conocer de forma certera, qué informaciones se pueden recopilar en nuestro sitio web, cómo se usan y en qué circunstancias podemos divulgarlas a terceros. Esta Política de Privacidad se aplica sólo a la información recopilada a través del sitio web, más no a la recopilación de información por otros medios o diversas fuentes.
+          Esta Política de Privacidad publicada en nuestro sitio web, establece las reglas y políticas generales que rigen el uso de nuestro sitio web. Dependiendo de sus actividades y el uso que le dé a nuestro sitio web, es posible que deba aceptar términos y condiciones adicionales.
+          </p>
+          <hr class="bg-dark  w-50 mx-auto my-5"/>
+          <h3 class="font-weight-bold">2. Visitantes</h3>
+          <p>Al igual que la mayoría de los operadores de sitios web, Baila Bollywood recopila información de identificación no personal del tipo que los servidores suelen poner a disposición, como el tipo de navegador, la preferencia de idioma, el sitio de referencia y la fecha y hora de cada solicitud de visitante. El propósito de Baila Bollywood conforme a recopilar información de identificación no personal es comprender mejor cómo los visitantes de Baila Bollywood usan el sitio web. De vez en cuando, Baila Bollywood puede divulgar información que no sea de identificación personal en conjunto, por ejemplo, mediante la publicación de un informe sobre las tendencias en el uso de su sitio web.
+          </p>
+          <hr class="bg-dark w-50 mx-auto my-5"/>
+          <h3 class="font-weight-bold">3.Cambios en la Política de Privacidad
+          </h3>
+          <p>Aunque es probable que la mayoría de los cambios sean menores, Baila Bollywood advierte que es posible que pueda cambiar su Política de Privacidad de vez en cuando, y según el criterio exclusivo del sitio web: https://bailabollywood.com. El equipo de Baila Bollywood, recomienda a los visitantes a consultar con frecuencia esta página en caso de cualquier cambio en su Política de Privacidad. El uso continuado de este sitio después de cualquier cambio en su Política de Privacidad constituirá su aceptación y acato. 
+          </p>
+       </div>
+      
+    </div>
+  </div>
+</div>
     <div class="footer-section ">
+    <i style="color:#fff"class="fa mr-3 fa-flag-checkered"></i><a href="#privacyPolicyModal" class="text-white text-center d-block mb-1"  data-toggle="modal" data-target="#privacyPolicyModal">Política de Privacidad</a>
       Website Made With &hearts; By <a href=" https://www.linkedin.com/in/vaibhav-kaul-ab5941182/"
           class="text-white mx-1 font-weight-bold" target="_blank" title="Vaibhav's Linkedin Profile">Vaibhav Kaul</a>
       And <a href="https://www.linkedin.com/in/pawan-saggu-06589b157/" class="text-white font-weight-bold mx-1"
