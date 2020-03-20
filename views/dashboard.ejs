@@ -12,14 +12,16 @@
 
     <!---------------------------Google Fonts----------------------------------------->
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200&display=swap" rel="stylesheet" />
+	<!------------------Font Awesome Icons------------------------>
+  	<script src="/scripts/all.min.js"></script>
 
-
-    <!--Web app manfest file for ios support -->
+    <!--Web app manfest file for ios support 
     <link rel="apple-touch-icon" href="https://drive.google.com/uc?id=1xKggmfNIkigJXy6HKUDdFEwIy-uGVjiF" />
     <meta name="apple-mobile-web-app-status-bar" content="#373B44" />
-    <!--Web app manfest file for android devices-->
+    <!--Web app manfest file for android devices
     <link rel="manifest" href="/manifest.json" />
     <meta name="theme-color" content="#373B44" />
+    -->
 
     <!-- styles -->
     <link href="/stylesheets/styles.css" rel="stylesheet" />
@@ -42,15 +44,10 @@
 </head>
 
 <body id="main-body">
-
-
-
-    <div class="header sticky-top">
+	<div class="header sticky-top">
         <nav id="nav-header" class="justify-content-between navbar">
             <a class="navbar-brand" href="/"><img src="/images/Spanish-bolo-natraj-transparent.png"
                     class="logo-navbar-left" alt="Logo Of Baila Bollywood"></a>
-            <a class="navbar-brand" href="/"><img src="/images/baila-bollywood-transparent.png"
-                    class="logo-navbar-middle" alt="Logo Of Baila Bollywood"></a>
             <div class="dropdown mr-5">
                 <button class="btn  dropdown-toggle text-white" type="button" id="dropdownMenuButton"
                     style=" background-color: transparent;" data-toggle="dropdown" aria-haspopup="true"
@@ -58,7 +55,7 @@
                     Signed in as <%=currentUser.username%>
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="/logout">Logout</a>
+                    <a class="dropdown-item" href="/logout">Cerrar Sesión</a>
 
                 </div>
             </div>
@@ -71,7 +68,7 @@
             <div class="row ">
                 <div class="pg-con-video-player  col-xl-8 col-lg-8  ">
                     <iframe class="video-content-frame " name="videoScreenPlayer" title="Video Frame For Videos"
-                        src="https://drive.google.com/uc?id=1AFtIO6LQAlArFgpkwMvImmIMRn5nDZTE" id="VideoContent"
+                        src="/images/dashboard-frame-image.jpg" id="VideoContent"
                         allowfullscreen>
                     </iframe>
                     <img src="/images/baila-bollywood-transparent.png" class="img-fluid image-below-video-frame"
@@ -453,16 +450,52 @@
         </div>
     </div>
 
-
+		<!-----------------------------------------------
+                                Privacy Policy Modal Form
+                                              ----------------------------------->
+                                              
+ <div class="modal fade" id="privacyPolicyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+	  <div class="modal-content">
+		<div class="modal-header ">
+			<h5 class="font-weight-bold ml-auto mr-auto" id="exampleModalLongTitle"><i class="fa fa-user mr-3" style="color:#f5af19;"></i>Declaración de privacidad Baila Bollywood
+			</h5>
+		  <button type="button" class="close ml-0" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		</div>
+		<div class="modal-body privacy-statement">
+		  <h3 class="font-weight-bold text-left">1. Baila Bollywood Política de Privacidad 
+		  </h3>
+		  <p>La Política de Privacidad de Baila Bollywood se enfoca en respetar y ponderar la privacidad del usuario con respecto a cualquier información que podamos recopilar mientras operamos nuestro sitio web. Esta Política de Privacidad se aplica a https://bailabollywood.com. Respetamos su privacidad y nos comprometemos a proteger la información de identificación personal que usted pueda llegar a proporcionar a través de nuestro sitio web. Hemos adoptado estas medidas de seguridad para dar a conocer de forma certera, qué informaciones se pueden recopilar en nuestro sitio web, cómo se usan y en qué circunstancias podemos divulgarlas a terceros. Esta Política de Privacidad se aplica sólo a la información recopilada a través del sitio web, más no a la recopilación de información por otros medios o diversas fuentes.
+			Esta Política de Privacidad publicada en nuestro sitio web, establece las reglas y políticas generales que rigen el uso de nuestro sitio web. Dependiendo de sus actividades y el uso que le dé a nuestro sitio web, es posible que deba aceptar términos y condiciones adicionales.
+			</p>
+			<hr class="bg-dark  w-50 mx-auto my-5"/>
+			<h3 class="font-weight-bold">2. Visitantes</h3>
+			<p>Al igual que la mayoría de los operadores de sitios web, Baila Bollywood recopila información de identificación no personal del tipo que los servidores suelen poner a disposición, como el tipo de navegador, la preferencia de idioma, el sitio de referencia y la fecha y hora de cada solicitud de visitante. El propósito de Baila Bollywood conforme a recopilar información de identificación no personal es comprender mejor cómo los visitantes de Baila Bollywood usan el sitio web. De vez en cuando, Baila Bollywood puede divulgar información que no sea de identificación personal en conjunto, por ejemplo, mediante la publicación de un informe sobre las tendencias en el uso de su sitio web.
+			</p>
+			<hr class="bg-dark w-50 mx-auto my-5"/>
+			<h3 class="font-weight-bold">3.Cambios en la Política de Privacidad
+			</h3>
+			<p>Aunque es probable que la mayoría de los cambios sean menores, Baila Bollywood advierte que es posible que pueda cambiar su Política de Privacidad de vez en cuando, y según el criterio exclusivo del sitio web: https://bailabollywood.com. El equipo de Baila Bollywood, recomienda a los visitantes a consultar con frecuencia esta página en caso de cualquier cambio en su Política de Privacidad. El uso continuado de este sitio después de cualquier cambio en su Política de Privacidad constituirá su aceptación y acato. 
+			</p>
+		 </div>
+		
+	  </div>
+	</div>
+  </div>		
+		
 
 
     <div class="footer-section m-0">
+    <!---------------------------Privacy policy statement opens after clicking here-------------------->
+	<i style="color:#fff"class="fas mr-3 fa-flag-checkered"></i><a href="#privacyPolicyModal" class="text-white text-center d-block mb-1"  data-toggle="modal" data-target="#privacyPolicyModal">Política de Privacidad</a>
         Website Made With &hearts; By <a href=" https://www.linkedin.com/in/vaibhav-kaul-ab5941182/"
             class="text-white mx-1 font-weight-bold" target="_blank" title="Vaibhav's Linkedin Profile">Vaibhav Kaul</a>
         And <a href="https://www.linkedin.com/in/pawan-saggu-06589b157/" class="text-white font-weight-bold mx-1"
             target="_blank" title="Pawan's Linkedin Profile">Pawan Saggu</a>
         <br />
-        &copy; 2019 Copyright BailaBollywood<img src="https://drive.google.com/uc?id=1xKggmfNIkigJXy6HKUDdFEwIy-uGVjiF"
+        &copy; 2019 Copyright BailaBollywood<img src="/images/Spanish-bolo-natraj-transparent.png"
             alt="Baila Bollywood Icon">
     </div>
 
