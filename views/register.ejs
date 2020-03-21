@@ -24,10 +24,9 @@
   <!---------------------------Google Fonts----------------------------------------->
   <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200&display=swap" rel="stylesheet" />
 
-  <!-------------------------------------Font Awesome Icons----------------------------------------->
-  <script async defer src="/scripts/all.min.js"></script>
-<link rel="stylesheet" href=“https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css” />
-  </script>
+  <!------------------Font Awesome Icons----s-------------------->
+        <script src="/scripts/all.min.js"></script>
+        <script src="/scripts/fontawesome.min.js"></script>
 
 
   <!-------------------Custom css files------------------------------->
@@ -81,14 +80,14 @@
           </ul>
       <form class="form-inline  log-reg-btn ml-xl-5 ml-lg-5  justify-content-center">
         <% if(!currentUser) {%>
-        <a class="btn  mr-xl-3 mr-lg-3 mr-md-3 mr-sm-3 mr-3 login-btn " href="/login" target="_top"><i
+        <a class="btn  mr-xl-3 mr-lg-3 mr-md-3 mr-sm-3 login-btn " href="/login" target="_top"><i
             class="fa fa-sign-in"></i> Iniciar Sesión </a>
-        <a class="btn ml-xl-3 ml-lg-3 ml-md-3 ml-sm-3  register-btn " href="/register" target="_top"><i
+        <a class="btn mr-xl-3 mr-lg-3 mr-md-3 mr-sm-3  register-btn " href="/register" target="_top"><i
             class="fa fa-user-plus"></i> Regístrate</a>
         <% }else{ %>
-        <a class="btn  mr-xl-3 mr-lg-3 mr-md-3 mr-sm-3 mr-3 login-btn " href="/logout" target="_top"><i
+        <a class="btn  mr-xl-3 mr-lg-3 mr-md-3 mr-sm-3 login-btn " href="/logout" target="_top"><i
             class="fa fa-sign-in"></i> Cerrar Sesión</a>
-        <a class="btn  mr-xl-3 mr-lg-3 mr-md-3 mr-sm-3 mr-3 register-btn " href="/dashboard" target="_top"><i
+        <a class="btn  mr-xl-3 mr-lg-3 mr-md-3 mr-sm-3 register-btn " href="/dashboard" target="_top"><i
             class="fa fa-heart"></i> My Tablero</a>
         <% } %>
       </form>
