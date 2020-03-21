@@ -210,7 +210,7 @@ app.post("/login", passport.authenticate('local', {
 }), function (req, res) {
   console.log(req.user.username);
   req.flash("success", "Welcome to BailaBollywood " + req.user.username);
-  res.redirect("/dashboard");
+  res.redirect("/");
 });
 
 app.get("/login/forgotPassword", middleware.isLoggedIn1, function (req, res) {
@@ -255,7 +255,7 @@ app.get("/auth/google/redirect", passport.authenticate('google', {
 }), (req, res) => {
   console.log(req.user);
   req.flash("success", "Welcome to BailaBollywood " + req.user.username);
-  res.redirect("/dashboard");
+  res.redirect("/");
 });
 
 //Facebook Login
@@ -272,7 +272,7 @@ app.get("/auth/facebook/redirect", passport.authenticate('facebook', {
 }), (req, res) => {
   console.log(req.user);
   req.flash("success", "Welcome to BailaBollywood " + req.user.username);
-  res.redirect("/dashboard");
+  res.redirect("/");
 });
 
 
