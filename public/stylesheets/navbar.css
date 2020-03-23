@@ -35,6 +35,7 @@ navbar-light
 {
   width:80px;
   height:80px;
+ transform:scale(1.2);
 }
 .navbar-nav
 {
