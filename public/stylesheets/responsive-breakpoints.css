@@ -444,6 +444,11 @@
             width:100%;
             height:100%;
         }
+      /*Index page all main headings*/
+        .heading-section
+        {
+                font-size:3.5rem;
+       }
        
         .btn-primary,
         .btn-success,
@@ -664,6 +669,11 @@
               margin-top:10px;
                 
          }
+       /*Index page all main headings*/
+        .heading-section
+        {
+                font-size:2.5rem !important;
+       }
 }
 
 @media (max-width:340px)
@@ -746,6 +756,10 @@
          {
               font-size:3.5rem;
 
+         }
+        .traditional-dance-img
+         {
+                 width:100%;
          }
 }
 
