@@ -1,0 +1,575 @@
+@font-face {
+    font-family: Ananda Namaste Regular;
+    src: url("./Ananda Namaste Regular.ttf");
+  }
+  
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Titillium Web', sans-serif ;
+}
+/*
+#loader
+{
+    height:100vh;
+    width:100%;
+    overflow:hidden;
+    z-index: 9999999;
+    animation:preloader 1s ease infinite alternate;
+    transition: all 0.5s ease ;
+}
+
+@keyframes preloader
+{
+    0%
+    {
+        background:rgba(0, 29, 56, 1) url("../images/baila-bollywood-icon.png") no-repeat center;
+        background-size:150px 150px;
+        transform: scale(1);
+    }
+    100%
+    {
+        background:rgba(0, 29, 56, 1) url("../images/baila-bollywood-icon-red.png") no-repeat center;
+        background-size: 150px 150px;
+        transform: scale(1.2);
+    }
+
+}
+*/
+/*Background image for section 1*/
+.welcome-heading
+{
+  color:#fb0e2d;
+  font-family: Ananda Namaste Regular;
+}
+.hero-image
+{
+    width:100%;
+    min-height:100vh;
+    background-image:linear-gradient(to bottom,rgba(255, 95, 109, 0.5),rgba(247, 183, 51, 0.6)),url("../images/bg-image.jpg");
+    background-size:100% 100%;
+    border-radius: 0px;
+    font-family: Ananda Namaste Regular;
+    
+}
+.heading-section
+{
+    font-family: Ananda Namaste Regular
+}
+
+.display-1
+{
+    font-weight:bolder;
+    font-size: 5rem;
+}
+.hero-image-like-icon
+{
+    font-size:3rem;
+}
+/*Contact us box modal*/
+.modal-header
+{
+    box-shadow:0px 0px 25px 0px;
+}
+.modal-title
+{
+    /* font-size:2.1em; */
+    font-weight:900;
+}
+/*From labels*/
+.name-label,
+.email-label,
+.subject-label
+{
+    position:relative;
+    top:30px;
+    left:20px;
+    color:rgba(220, 36, 36, 1);
+    font-size:1.5rem;
+}
+.form-control[placeholder]
+{
+    margin-top:10px;
+   
+}
+.form-control
+{
+    height:60px;
+    border:1px solid #373B44;
+}
+/*All sections common property*/
+.section-one,
+.section-two,
+.section-three,
+.section-four,
+.section-five
+{
+  overflow: hidden;
+  width:100%;
+  margin-top:10rem;
+}
+
+.image-gallery
+{
+    width:100%;
+    height:100%;
+    border-radius:20px;
+    box-shadow:0 0 8px 0 rgba(17,22,26,.16), 0 4px 8px 0 rgba(17,22,26,.08), 0 8px 16px 0 rgba(17,22,26,.08);
+}
+.col
+{
+    padding:0px;
+    width:200px;
+    height:300px;
+}
+
+/**********
+swiper medium blogs section-five
+********** */
+.section-five
+  {
+      background:url("../images/section-background.jpg");
+  }
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
+  }
+  .swiper-slide {
+    position:relative;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .review-image
+  {
+      width:100%;
+      height:300px;
+      
+  }
+  
+  .blog-name,
+  .blog-date
+  {
+       transform:translateY(200px);
+      z-index: 3;
+      padding:5px;
+      color:white;
+      bottom:0;
+      font-weight:900;
+      transition: all 0.3s ease-in-out 0s;
+      position: absolute;
+      text-align: center;
+       opacity: 0;
+      transition: all 0.5s ease-in-out 0s;
+  }
+  
+  .medium-blog-link
+  {
+      position:absolute;
+      z-index:3;
+      padding:5px;
+      top:200px;
+      font-size:2rem;
+      text-align:center;
+       
+  }
+  
+  .swiper-slide:hover .medium-blog-link
+  {
+      color:#fff;
+      border:1px solid rgba(0, 29, 56, 1); 
+      background:rgba(0, 29, 56, 1);
+  }
+
+
+  .overlay-blog
+  {
+      position:absolute;
+      z-index:2;
+      background-image:linear-gradient(to bottom,rgba(0, 29, 56, 0.6),#0009);
+      width:100%;
+      height: 100%;
+      opacity:0;
+      transition: all 0.3s ease-in-out 0s;
+      
+  }
+  
+  .swiper-slide:hover
+  {
+      border:1px solid rgba(0, 29, 56, 1);
+      box-shadow: 0 0 8px 0 rgba(0, 29, 56, 1);
+  }
+  .swiper-slide:hover .blog-name,
+  .swiper-slide:hover .blog-date
+  {
+      opacity: 1;
+      transform:translateY(0px);
+  }
+  .swiper-slide:hover .overlay-blog
+  {
+      opacity: 1;
+      width:100%;
+      height:100%;
+  }
+  
+  .swiper-btn
+  {
+      background:#0009;
+      height:40px;
+      width:40px;
+      border-radius:50%;
+      padding:30px;
+      color:#fff;
+  }
+  
+  
+  /********************** 
+        section-one
+  ********************/
+.section_one-background
+{
+    padding:20px;
+    width:100%;
+    height:auto;
+    background-size:cover;
+}
+.indian-classical-jumbotron
+{
+    background:#fff;
+}
+.dance-music-to-english
+{
+  background:#fff;
+  color:rgba(255, 95, 109, 1);
+  border:1px solid rgba(255, 95, 109, 0.8);
+  box-shadow:0px 1px 20px 0px rgba(46, 61, 73, 0.2);
+  font-weight:bolder;
+}
+.dance-music-to-spanish
+{
+  background:#fff;
+  color:rgba(247, 183, 51, 1);
+  border:1px solid rgba(247, 183, 51, 0.8);
+  box-shadow:0px 1px 20px 0px rgba(46, 61, 73, 0.2);
+  font-weight:bolder;
+}
+.indian_dance-music-history,
+.about_us-paragraph
+{
+    font-size:1.2rem;
+    font-weight:bolder;
+    text-align: justify;
+}
+
+.traditional-dance-img
+{
+    height:200px;
+    width:300px;
+}
+/************
+  About Baila Bollywood
+  ***********/
+.about-image
+{
+    width:300px;
+    height:250px;
+    shape-outside:circle(50%);
+    margin:0 20px 20px 0;
+}
+.spanish-to-english,
+.btn-close
+{
+  background:#fff;
+  color:rgba(255, 95, 109, 1);
+  border:1px solid rgba(255, 95, 109, 0.8);
+  box-shadow:0px 1px 20px 0px rgba(46, 61, 73, 0.2);
+  font-weight:bolder;
+}
+.english-to-spanish,
+.btn-save
+{
+  background:#fff;
+  color:rgba(247, 183, 51, 1);
+  border:1px solid rgba(247, 183, 51, 0.8);
+  box-shadow:0px 1px 20px 0px rgba(46, 61, 73, 0.2);
+  font-weight:bolder;
+}
+
+.section_two-about-us
+{
+    background:#fff;
+    padding:0px;
+}
+
+.line
+{
+    width:150px;
+    height:2px;
+    background:#000;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.btn-primary,
+.btn-success,
+.btn-warning,
+.btn-danger,
+.btn-dark
+{
+    margin:10px;
+    min-height:50px;
+    font-size:2rem;
+    font-weight:900;
+    width:50px;
+    color:white;
+}
+
+/**********
+  Most Popular Artist
+  **********/
+.popular-artist-videos
+{
+    width:100%;
+    height:360px;
+}
+.load-more
+{
+    color:rgba(255, 95, 109, 1);
+    font-size:2rem;
+    background:#fff;
+    min-width:50px;
+    border:1px solid rgba(255, 95, 109, 1);
+     border-radius:50px;
+      box-shadow:0px 1px 20px 0px rgba(46, 61, 73, 0.2);
+}
+.load-more:hover
+{
+    background:#fff;
+    color:rgba(247, 183, 51, 1);
+    border:1px solid rgba(247, 183, 51, 1);
+}
+
+/* Founders Note Section*/
+.container-founder-image
+{
+    position:relative;
+    overflow:hidden;
+    height:200px;
+    width:200px;
+   border-radius:50%;
+}
+.img-founder
+{
+    height:200px;
+    width:200px;
+    border-radius:50%;
+}
+
+.container-founder-image:hover .img-founder
+{
+   transform:scale(1.1);
+}
+
+.content-center
+{
+    margin-bottom:0;
+    display: flex;
+    min-height:100vh;
+    flex-direction: column;
+    align-items: center;
+    background:linear-gradient(to bottom,rgba(220, 36, 36, 0.6),rgba(1,1,1,0.7)), url("../images/red-forest-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.read-more-btn
+{
+    color:#fff;
+    background:rgba(220, 36, 36, 1);
+    height:40px;
+   
+   
+}
+.read-more-btn:hover
+{
+    color:rgba(220, 36, 36, 1);
+    background:white;
+}
+
+
+.imgBox
+{
+    position:relative;
+    overflow:hidden;
+    margin-left:auto;
+    margin-right:auto;
+    height:275px;
+    width:307px;
+}
+.over-img
+{
+    background:rgba(220, 36, 36, 0.5);
+    position:absolute;
+    z-index:100;
+    height:100%;
+    width:305px;
+}
+.txt-over-img
+{
+    position:absolute;
+    color:#fff;
+    z-index:200;
+    bottom:5px;
+    left:5px;
+    font-family:monospace;
+    font-size:1rem;
+    text-align:center;
+    padding:20px;
+}
+.img{
+    transition:all 0.5s ease;
+}
+.imgBox:hover .img
+{
+   transform:scale(1.2);
+   
+}
+/* Footer */
+/***********
+    Privacy Policy Modal Box
+    **********/
+    .privacy-statement
+{
+    height:500px;
+    overflow-y: scroll;
+    padding:30px;
+    text-align:justify;
+}
+.footer-row
+{
+    min-height:300px;
+    background:rgba(0, 29, 56, 1);
+    
+}
+.footer-left,
+.footer-center,
+.footer-right
+{
+    color:#fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:100%;
+    width:100%;
+}
+
+.social-icons a
+{
+    text-decoration: none;
+    color:rgba(247, 183, 51, 1);
+    font-size:2rem;
+    padding:15px;
+    height:60px;
+    width:60px;
+    border:1px solid rgba(255, 95, 109, 1);
+    margin:5px;
+}
+.fa-facebook:hover
+{
+    background: #3b5999;
+    border-color:#3b5999;
+    color:#fff;
+}
+.fa-youtube:hover
+{
+    background:#cd201f;
+    border-color:#cd201f;
+    color:#fff;
+}
+.fa-twitter:hover
+{
+    background:#55acee;
+    border-color:#55acee;
+    color:#fff;
+}
+.fa-linkedin:hover
+{
+    background:#0077B5;
+    border-color:#0077B5;
+    color:#fff;
+}
+.fa-instagram:hover
+{
+    background:#e4405f;
+    border-color:#e4405f;
+    color:#fff;
+}
+.fa-quora:hover
+{
+    background:#b92b27;
+    border-color:#b92b27;
+    color:#fff;
+}
+.fa-medium:hover
+{
+    background:#02b875;
+    border-color:#02b875;
+    color:#fff;
+}
+
+.footer-right-img
+{
+    height:200px;
+    width:200px;
+    margin-top:6rem;
+    transform: scale(1.6);
+    /*
+    animation:rocket 1s ease infinite alternate;
+    transition:all 0.5s ease;
+    */
+}
+/*
+@keyframes rocket
+{
+    0%
+    {
+        transform:translateY(-50px);
+    }
+    100%
+    {
+        transform:translateY(0px);
+    }
+}
+*/
+
+.footer-section
+{
+    width:100%;
+    min-height:50px;
+    background:linear-gradient(to right ,rgba(255, 95, 109, 1),rgba(247, 183, 51, 1));
+    color:#fff;
+    text-align:center;
+    padding:10px;
+    font-weight: lighter;
+}
+.footer-section img
+{
+    height:30px;
+    width:30px;
+}
+

@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!--Title of the Website-->
+  <title>Baila Bollywood</title>
+  <!--Meta tag that tells browser to not translate page to english (Preferably chrome)-->
+  <meta name="google" content="notranslate" />
+  <!--Meta tags for SEO-->
+  <meta name="description"
+    content="A Spanish Language Portal on Indian Dance Songs Subtitled into Spanish Language.Spanish Speakers can watch Bollywood Songs with Spanish Subtitles." />
+  <meta name="robots" content="index, follow" />
+  <!--Meta tag for Responsiveness-->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <!--Title bar Icon-->
+  <link rel="icon" href="/images/Spanish-bolo-natraj-transparent.png" />
+  <!---------------Bootstrap Stylesheet---------------------------------------->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <!-------------------Custom css files------------------------------->
+  <!---------------------------Google Fonts----------------------------------------->
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200&display=swap" rel="stylesheet" />
+
+  <!----------------------------Navbar Css Files---------------------->
+  <link rel="stylesheet" type="text/css" href="/stylesheets/navbar.css" />
+  <!-- Swiper css initialized-->
+  <link rel="stylesheet" type="text/css" href="/stylesheets/swiper.min.css" />
+  <!-- Swiper javascript initialized-->
+  <script src="scripts/swiper.min.js"></script>
+  <!-------------Css file of index.html-------------------------->
+  <link rel="stylesheet" type="text/css" href="/stylesheets/index.css" />
+
+  <!---------------Css file for responsiveness------------------>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/responsive-breakpoints.css" />
+
+  <!------------------Social Media Icons------------------------>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+   <!--Web app manfest file for android devices
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#373B44" />
+  <link rel="apple-touch-icon" href="/images/baila-bollywood-icon.png" />
+  <meta name="apple-mobile-web-app-status-bar" content="#373B44" />
+  -->
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+
+   
+  <style>
+    body{    
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
+    body{
+        background-image:url(/images/video-bg-1.jpg);
+         
+    }
+
+
+.profile-links img{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-left: 5px;
+}
+.testimonial{
+    background: #fff;
+    text-align: center;
+    padding: 30px 30px 50px;
+    margin: 0 15px 100px;
+    position: relative;
+    margin-top: 50px;
+    height: 430px;
+}
+.testimonial:before,
+.testimonial:after{
+    content: "";
+    border-top: 40px solid #fff;
+    border-right: 125px solid transparent;
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+}
+.testimonial:after{
+    border-right: none;
+    border-left: 125px solid transparent;
+    left: auto;
+    right: 0;
+}
+.testimonial .icon{
+    display: inline-block;
+    font-size: 80px;
+    color: #bd986b;
+    margin-bottom: 20px;
+    opacity: 0.6;
+}
+.testimonial .description{
+    font-size: 16px;
+    color: #777;
+    text-align: justify;
+    margin-bottom: 30px;
+    opacity: 0.9;
+    letter-spacing: -1px;
+}
+.testimonial .testimonial-content{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 300px;
+
+}
+
+.testimonial .pic{
+    display: inline-block;
+    border: 6px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 2px 2px #daad86;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+}
+.testimonial .pic img{
+    width: 100%;
+    height:120px;
+    image-orientation:inherit;
+}
+.testimonial .title{
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: capitalize;
+    margin: 0 0 5px 0;
+}
+.testimonial .post{
+    display: block;
+    font-size: 15px;
+    color: #ffd9b8;
+    font-weight: bold;
+    
+}
+.owl-theme .owl-controls{
+    margin-top: 45px;
+}
+.owl-theme .owl-controls .owl-page span{
+    width: 32px;
+    height: 10px;
+    background: #fff;
+    border: 2px solid #bd986b;
+    margin: 5px;
+    opacity: 1;
+}
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+    background: #ffd9b8;
+    border-color: #fff;
+}
+    .pic img{
+        width: 100px !important;
+        height: 120px;
+    }
+    </style>
+
+</head>
+
+<body>
+
+  <!------------------------------------Navigation Bar Section-One------------------------------------------>
+
+  <nav id="nav-header" class="navbar navbar-expand-lg navbar-light sticky-top  ">
+    <a class="navbar-brand p-0 m-0" href="/"><img src="/images/Spanish-bolo-natraj-transparent.png" class="logo-navbar"
+        alt="Logo Of Baila Bollywood"></a>
+    <button class="navbar-toggler mr-3  " type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class=" navbar-toggler-icon"></span>
+    </button>
+
+   <div class="collapse navbar-collapse justify-content-center " id="navbarSupportedContent">
+          <ul class="navbar-nav nav nav-pills ">
+            <li class="nav-item m-xl-2 active">
+              <a class="nav-link text-center font-weight-bold " href="/">Inicio </a>
+            </li>
+            <li class="nav-item m-xl-2">
+              <a class="nav-link text-center font-weight-bold " href="#about">
+                Quiénes Somos
+                </a>
+            </li>
+            <li class="nav-item m-xl-2">
+              <a class="nav-link text-center font-weight-bold " href="#blogs">Nuestro Blog</a>
+            </li>
+            <li class="nav-item m-xl-2">
+              <a class="nav-link text-center font-weight-bold " href="#pop-categ">Lo más Popular</a>
+            </li>
+            <li class="nav-item m-xl-2">
+              <a class="nav-link text-center font-weight-bold " href="#found-note">Nuestro Fundador </a>
+            </li>
+            <li class="nav-item m-xl-2">
+              <a class="nav-link text-center font-weight-bold" data-toggle="modal" data-target="#exampleModalCenter" >Contacto</a>
+            </li>
+            <li class="nav-item m-xl-2">
+              <a class="nav-link text-center font-weight-bold " href="/team">Equipo</a>
+            </li>
+            
+          </ul>
+      <form class="form-inline  log-reg-btn ml-xl-5 ml-lg-5  justify-content-center">
+        <% if(!currentUser) {%>
+        <a class="btn mr-xl-3 mr-lg-3 mr-md-3 mr-sm-3  login-btn " href="/login" target="_top"><i
+            class="fa fa-sign-in"></i> Iniciar Sesión </a>
+        <a class="btn mr-xl-3 mr-lg-3 mr-md-3 mr-sm-3 register-btn " href="/register" target="_top"><i
+            class="fa fa-user-plus"></i> Regístrate</a>
+        <% }else{ %>
+        <a class="btn  mr-xl-3 mr-lg-3 mr-md-3 mr-sm-3 login-btn " href="/logout" target="_top"><i
+            class="fa fa-sign-in"></i> Cerrar Sesión</a>
+        <a class="btn  mr-xl-3 mr-lg-3 mr-md-3 mr-sm-3 register-btn " href="/dashboard" target="_top"><i
+            class="fa fa-heart"></i> My Tablero</a>
+        <% } %>
+      </form>
+    </div>
+  </nav>
+
+  <div class="demo">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="testimonial-slider" class="owl-carousel">
+                    <div class="testimonial">
+                        <span class="icon fa fa-quote-left"></span>
+                        <p class="description">
+                            "I am a change enthusiast! I am planning to help people in any way possible. 
+                                Theatre and Drama have always tickled my fancy. Hey there i am always up for a cup of tea."
+                        </p>
+                        <div class="testimonial-content">
+                            <div class="pic"><img src="/images/Vaibhav-Kaul.jpg" class=""alt=""></div>
+                            <h3 class="title">Vaibhav Kaul</h3>
+                            <span class="post">Front-end Developer Intern</span>
+                            <div class="profile-links">
+                              <a href="https://www.linkedin.com/in/vaibhav-kaul-ab5941182/"><img src="/images/linkedin.png"></a>
+                              <a href="https://www.facebook.com/vaibhav.kaul2/"><img src="/images/facebook.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <span class="icon fa fa-quote-left"></span>
+                        <p class="description">
+                            "A student of history with a keen interest in understanding the various facets of society, art and culture. 
+                              You'd generally find me binge watching something, visiting art galleries or museums and collecting postcards. "
+                        </p>
+                        <div class="testimonial-content">
+                            <div class="pic"><img src="/images/Aakanksha-Tated.jpg" alt=""></div>
+                            <h3 class="title">Aakanksha Tated</h3>
+                            <span class="post">Social Media and Content Writing Intern</span>
+                            <div class="profile-links">
+                              <a href=" https://www.linkedin.com/in/aakanksha-tated-15290715b/"><img src="/images/linkedin.png"></a>
+                              <a href=" https://www.facebook.com/aakanksha.tated"><img src="/images/facebook.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <span class="icon fa fa-quote-left"></span>
+                        <p class="description">
+                            "Spanish languauge expert and experienced Content Writer with a demonstrated history of working in the industry of electronic media industry. Skilled in Microsoft Excel, Public Speaking, Microsoft Office, Social Media,Spanish and English. 
+                        <div class="testimonial-content">
+                            <div class="pic"><img src="/images/ayush-naithani.jpg" alt=""></div>
+                            <h3 class="title">Ayush Naithani</h3>
+                            <span class="post">Spanish language intern</span>
+                             <div class="profile-links">
+                              <a href="https://www.linkedin.com/in/ayush-naithani-005410172/"><img src="/images/linkedin.png"></a>
+                              <a href="https://www.facebook.com/redox1234"><img src="/images/facebook.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                       
+                       <div class="testimonial">
+                        <span class="icon fa fa-quote-left"></span>
+                        <p class="description">I’m 18 and I live in Delhi. I’m a freshman pursuing BBA LLB from Bennett University. Joyful is the adjective describing me in one single word. My hobbies include sketching, writing, or reading novels.My passion is traveling and exploring.
+                        </p>
+                        <div class="testimonial-content">
+                            <div class="pic"><img src="/images/Esha-Kumar.jpeg" alt=""></div>
+                            <h3 class="title">Esha Kumar</h3>
+                            <span class="post">Content writing intern </span>
+                             <div class="profile-links">
+                              <a href="https://www.facebook.com/esha.kumar123"><img src="/images/facebook.png"></a>
+                            </div>
+                        </div>
+                    </div>     
+                       <div class="testimonial">
+                        <span class="icon fa fa-quote-left"></span>
+                        <p class="description">A passionate, hardworking, and an optimistic guy, willing to go to that extra mile to achieve success while working with peers to convert the vision of an organisation into a reality.
+                        </p>
+                        <div class="testimonial-content">
+                            <div class="pic"><img src="/images/kashif-ahmad.jpeg" alt=""></div>
+                            <h3 class="title">Md. Kashif</h3>
+                            <span class="post">Digital Marketing Intern</span>
+                             <div class="profile-links">
+                              <a href="https://www.linkedin.com/in/Md-Kashif-DM"><img src="/images/linkedin.png"></a>
+                              
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <div class="testimonial">
+                        <span class="icon fa fa-quote-left"></span>
+                        <p class="description">I am enthusiastic, responsible and go getter person. Believes in hard work. And love to explore new things. 
+                        </p>
+                        <div class="testimonial-content">
+                            <div class="pic"><img src="/images/Dharana-Yadav.jpg" alt=""></div>
+                            <h3 class="title">Dharana Yadav</h3>
+                            <span class="post">Business development intern</span>
+                             <div class="profile-links">
+                              <a href="https://www.linkedin.com/in/dharana-yadav-8b53261a0"><img src="/images/linkedin.png"></a>
+                              
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="testimonial">
+                        <span class="icon fa fa-quote-left"></span>
+                        <p class="description">An Human resource and social work aspirant who loves to read, dance and cook.  Constantly looking for opportunities to grow and gain knowledge and experience. </p>
+                        <div class="testimonial-content">
+                            <div class="pic"><img src="/images/Neelima.jpg" alt=""></div>
+                            <h3 class="title">Neelima K M </h3>
+                            <span class="post">
+                            HR and Communications</span>
+                             <div class="profile-links">
+                              <a href="https://www.linkedin.com/in/neelima-k-m-ab8631191/"><img src="/images/linkedin.png"></a>
+                              <a href="https://m.facebook.com/?_rdr"><img src="/images/facebook.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial">
+                        <span class="icon fa fa-quote-left"></span>
+                        <p class="description">I consider myself as a passionate writer, with the urge to tell important stories on a daily basis.
+
+                         </p>
+                        <div class="testimonial-content">
+                            <div class="pic"><img src="/images/Akanksha-Sarma.jpg" alt="" style="image-orientation:initial;"></div>
+                            <h3 class="title">Akanksha Sarma </h3>
+                            <span class="post">Content Writer- SpanishBolo</span>
+                             <div class="profile-links">
+                              <a href="https://in.linkedin.com/in/akanksha-sarma-b2a774195&ved=2ahUKEwi78ZulodjoAhXhV3wKHTIUApwQFjAEegQIBRAB&usg=AOvVaw1kFcGFeyR3XTfcAOGLOGyT"><img src="/images/linkedin.png"></a>
+                              <a href="https://www.facebook.com/sarma.akanksha"><img src="/images/facebook.png"></a>
+                              <a href="https://www.instagram.com/akankshasarma/"><img src="/images/instagram.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="testimonial">
+                        <span class="icon fa fa-quote-left"></span>
+                        <p class="description">Designer, illustrator, gamer, android developer, and an ambivert. </p>
+                        <div class="testimonial-content">
+                            <div class="pic"><img src="/images/Pranay.jpg" alt=""></div>
+                            <h3 class="title">Pranay Kumar </h3>
+                            <span class="post">Android UI development </span>
+                             <div class="profile-links">
+                              <a href="https://www.linkedin.com/in/pranay-kumar-2250b6170"><img src="/images/linkedin.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                                           <div class="testimonial">
+                        <span class="icon fa fa-quote-left"></span>
+                        <p class="description">Making world a better place with Algorithms.</p>
+                        <div class="testimonial-content">
+                            <div class="pic"><img src="/images/pawan-saggu.jpeg" alt=""></div>
+                            <h3 class="title">Pawan Saggu</h3>
+                            <span class="post">Backend Developer Intern</span>
+                             <div class="profile-links">
+                              <a href="https://www.linkedin.com/in/pawan-saggu-06589b157/"><img src="/images/linkedin.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                      
+
+                      <div class="testimonial">
+                        <span class="icon fa fa-quote-left"></span>
+                        <p class="description">I am  currently pursuing civil engineering from Birsa Institute of Technology Sindri. I am a bibliophile and in love with poems.</p>
+                        <div class="testimonial-content">
+                            <div class="pic"><img src="/images/AKANSHA-IRA.jpg" alt=""></div>
+                            <h3 class="title">Akansha Ira</h3>
+                            <span class="post">Content writing intern</span>
+                             <div class="profile-links">
+                              <a href="https://www.facebook.com/akansha.ira"><img src="/images/facebook.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                      
+                      <div class="testimonial">
+                        <span class="icon fa fa-quote-left"></span>
+                        <p class="description">I'm a B.Tech. CSE undergrad at IIIT Delhi (2017-21 Batch). I enjoy coding and have a strong interest in Android Development and was involved in the backend development of the Bailabollywood and SpanishBOLO app.</p>
+                        <div class="testimonial-content">
+                            <div class="pic"><img src="/images/Aishwarya-Kumar.jpg" alt=""></div>
+                            <h3 class="title">Aishwarya Kumar</h3>
+                            <span class="post">Android App Developer Intern</span>
+                             <div class="profile-links">
+                              <a href="https://www.linkedin.com/mwlite/in/aishwarya-kumar-60488615a"><img src="/images/linkedin.png"></a>
+                              <a href="https://m.facebook.com/aishwarya.kumar.50702"><img src="/images/facebook.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                      
+                      <div class="testimonial">
+                        <span class="icon fa fa-quote-left"></span>
+                        <p class="description">I'm Mitzi, a 23 year old mexican girl. I'm graduate in literature and art therapy. I'm a Bollywood dancer and I'm passionate about Indian culture. </p>
+                        <div class="testimonial-content">
+                            <div class="pic"><img src="/images/Mitzi.jpg" alt=""></div>
+                            <h3 class="title">Mitzi Julio Arguijo </h3>
+                            <span class="post">Translator</span>
+                             <div class="profile-links">
+                              <a href="https://www.facebook.com/mitzi.julio https://www.linkedin.com/mwlite/in/mitzi-arguijo-b89547162"><img src="/images/facebook.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                      
+
+                      <div class="testimonial">
+                        <span class="icon fa fa-quote-left"></span>
+                        <p class="description">"18 Years Old VIT Chennai CSE student,
+                          Web-developer, I love to travel and play Basketball. You miss all the shots you don't take."</p>
+                        <div class="testimonial-content">
+                            <div class="pic"><img src="/images/Hitesh.jpg" alt=""></div>
+                            <h3 class="title">Hitesh</h3>
+                            <span class="post">Web-Development Intern</span>
+                             <div class="profile-links">
+                              <a href="https://www.linkedin.com/in/hitesh-rewri"><img src="/images/linkedin.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                                           <div class="testimonial">
+                        <span class="icon fa fa-quote-left"></span>
+                        <p class="description">"A passionately curious person on a constant spree to explore. I appreciate creativity and try to inculcate the same in my work."                     </p>
+                        <div class="testimonial-content">
+                            <div class="pic"><img src="/images/Puja-Priya.jpg" alt=""></div>
+                            <h3 class="title">Puja Priya </h3>
+                            <span class="post">Content Writer </span>
+                             <div class="profile-links">
+                              <a href="https://www.linkedin.com/in/puja-priya-b2495a100 "><img src="/images/linkedin.png"></a>
+                            </div>
+                        </div>
+                    </div>  
+                                   <div class="testimonial">
+                        <span class="icon fa fa-quote-left"></span>
+                        <p class="description">I am a Computer Science Engineering student from Assam Engineering College. I have been taking Graphics Designing classes from Image animation institute and I have been working as a freelancer for various designing projects.    </p>
+                        <div class="testimonial-content">
+                            <div class="pic"><img src="/images/Gagarina-Nath.jpg" alt=""></div>
+                            <h3 class="title">Gagarina Nath</h3>
+                            <span class="post">Graphics Designer </span>
+                             <div class="profile-links">
+                              <a href="https://www.facebook.com/gagarina.nath"><img src="/images/facebook.png"></a>
+                            </div>
+                        </div>
+                    </div>  
+                                   <div class="testimonial">
+                        <span class="icon fa fa-quote-left"></span>
+                        <p class="description">Calm, friendly, like searching, love India.       </p>
+                        <div class="testimonial-content">
+                            <div class="pic"><img src="/images/Daniela-Franco.jpeg" alt=""></div>
+                            <h3 class="title">Daniela Franco Escalante </h3>
+                            <span class="post">Community manager  </span>
+                             <div class="profile-links">
+                              <a href="https://www.linkedin.com/in/vaibhav-kaul-ab5941182/"><img src="/images/linkedin.png"></a>
+                              <a href="https://www.facebook.com/vaibhav.kaul2/"><img src="/images/facebook.png"></a>
+                            </div>
+                        </div>
+                    </div>  
+                                   <div class="testimonial">
+                        <span class="icon fa fa-quote-left"></span>
+                        <p class="description">I am a Psychology and Economics student who loves to write and express herself. I enjoyed my job as an HR intern co-ordinating and delegating between all interns.     </p>
+                        <div class="testimonial-content">
+                            <div class="pic"><img src="/images/Sanyukta-Singh.jpg" alt=""></div>
+                            <h3 class="title">Sanyukta Singh</h3>
+                            <span class="post">HR </span>
+                             <div class="profile-links">
+                              <a href="https://www.facebook.com/singhsanyuktaa"><img src="/images/facebook.png"></a>
+                            </div>
+                        </div>
+                    </div>  
+
+
+                   <div class="testimonial">
+                        <span class="icon fa fa-quote-left"></span>
+                        <p class="description">I live in Uruguay, but i am from Paraguay,  both countries of Southamerica. I'm a journalist and editor, a mother of two children and a indian culture lover.</p>
+                        <div class="testimonial-content">
+                            <div class="pic"><img src="/images/carolina-oddone.jpg" alt=""></div>
+                            <h3 class="title">Priya Oddone </h3>
+                            <span class="post">Editor</span>
+                             <div class="profile-links">
+                              <a href="https://www.linkedin.com/in/vaibhav-kaul-ab5941182/"><img src="/images/linkedin.png"></a>
+                              <a href="https://www.facebook.com/vaibhav.kaul2/"><img src="/images/facebook.png"></a>
+                            </div>
+                        </div>
+                    </div> 
+
+
+                       <div class="testimonial">
+                        <span class="icon fa fa-quote-left"></span>
+                        <p class="description">I'm student, currently pursuing B.sc in hospitality and hotel administration from IHMCTAN Lko. 
+                        </p>
+                        <div class="testimonial-content">
+                            <div class="pic"><img src="/images/Samprit.jpg" alt=""></div>
+                            <h3 class="title">Samprit Ramesh Chandake</h3>
+                            <span class="post">Business Development Inter (Sales)</span>
+                             <div class="profile-links">
+                              <a href="https://www.linkedin.com/in/samprit-ramesh-chandake-a88989195"><img src="/images/linkedin.png"></a>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+ <script>
+$(document).ready(function(){
+    $("#testimonial-slider").owlCarousel({
+        items:3,
+        itemsDesktop:[1000,3],
+        itemsDesktopSmall:[979,2],
+        itemsTablet:[768,2],
+        itemsMobile:[650,1],
+        pagination:true,
+        autoPlay:true
+    });
+});
+     </script>
+</html>
