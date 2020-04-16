@@ -275,11 +275,11 @@ app.get("/auth/facebook/redirect", passport.authenticate('facebook', {
   res.redirect("/");
 });
 
+
+
 app.get("/team",(req,res) => {
   res.render("team.ejs");
 });
-
-
 
 app.listen(port, err => {
   if (err) {
